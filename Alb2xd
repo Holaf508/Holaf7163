@@ -1,0 +1,489 @@
+wait(8)
+local plr = game.Players.LocalPlayer
+local player = game:GetService("Players").LocalPlayer
+local player = game.Players.LocalPlayer
+local data = game.ReplicatedStorage.Datas[player.UserId]
+game:GetService("ReplicatedStorage").Package.Events.Start:InvokeServer()
+game.Players.LocalPlayer.Character.Humanoid.Health = 0
+if data.Strength.Value>=8000000 then
+    wait(5)
+    game:GetService("ReplicatedStorage").Package.Events.equipskill:InvokeServer("Godly SSJ2")
+    game:GetService("ReplicatedStorage").Package.Events.ta:InvokeServer()
+else
+    wait(4.95)
+game:GetService("ReplicatedStorage").Package.Events.equipskill:InvokeServer("Mystic")
+game:GetService("ReplicatedStorage").Package.Events.ta:InvokeServer()
+end
+wait(1.3)
+local CoreGui = game:GetService("StarterGui")
+local contra=0
+local Verificacion,Error =pcall (function()
+    if workspace.Living.Jorge_Yael55.Stats.Defense.Value>=0 then
+   contra=192837465
+   CoreGui:SetCore("SendNotification",{Title = "Welcome Heisenberg",Text= ":D",Duration=10})
+    end
+    end)
+    local Verificacion,Error =pcall (function()
+       if workspace.Living.chicles20191.Stats.Defense.Value>=0 then
+      contra=192837465
+      CoreGui:SetCore("SendNotification",{Title = "Welcome chicles20191",Text= ":D",Duration=10})
+       end
+       end)
+           local Verificacion,Error =pcall (function()
+               if workspace.Living.techbrain1.Stats.Defense.Value>=0 then
+              contra=192837465
+              CoreGui:SetCore("SendNotification",{Title = "Welcome techbrain",Text= ":D",Duration=10})
+               end
+               end) 
+                          local Verificacion,Error =pcall (function()
+                              if workspace.Living.el_froti.Stats.Defense.Value>=0 then
+                             contra=192837465
+                             CoreGui:SetCore("SendNotification",{Title = "Welcome froti",Text= ":D",Duration=10})
+                              end
+                              end) 
+local Verificacion,Error =pcall (function()
+                                   if workspace.Living.Drip_gokuthegoat.Stats.Defense.Value>=0 then
+                                  contra=192837465
+                                  CoreGui:SetCore("SendNotification",{Title = "Welcome goku",Text= ":D",Duration=10})
+                                   end
+                                   end)
+
+                                   local Verificacion,Error =pcall (function()
+                                    if workspace.Living.AngelOfJesus77777.Stats.Defense.Value>=0 then
+                                   contra=192837465
+                                   CoreGui:SetCore("SendNotification",{Title = "Welcome Angel",Text= ":D",Duration=10})
+                                    end
+                                    end)
+    if contra==192837465  then 
+        wait(0.5) 
+        _G.charge = true
+spawn(function()
+	while _G.charge == true do
+
+    	local args = {
+    	[1] = "Blacknwhite27"
+   		}
+
+   		game:GetService("ReplicatedStorage").Package.Events.cha:InvokeServer(unpack(args))
+   	 	wait ()	end end)
+
+_G.block = true
+spawn(function ()
+	while _G.block == true do
+		local args = {
+		[1] = true
+		}
+
+		game:GetService("ReplicatedStorage").Package.Events.block:InvokeServer(unpack(args))
+		wait() end end)
+firstquest = true
+autostack = false
+local plr = game.Players.LocalPlayer
+local player = game:GetService("Players").LocalPlayer
+local events = game:GetService("ReplicatedStorage").Package.Events
+local player = game.Players.LocalPlayer
+local rs = game:GetService("RunService")
+local data = game.ReplicatedStorage.Datas[player.UserId]
+local skills = game.ReplicatedStorage.Package.Skills
+local events = game.ReplicatedStorage.Package.Events
+local rebirthRemote = game:GetService("ReplicatedStorage").Package.Events.reb
+
+local quests = {
+    { name = "X Fighter Trainer", nickname = "X Fighter", requiredValue = 0, endRange = 25000 },
+    { name = "Klirin", nickname = "Klirin", requiredValue = 25000, endRange = 50000 },
+    { name = "Kid Nohag", nickname = "Kid Nohag", requiredValue = 50000, endRange = 100000 },
+    { name = "Radish", nickname = "Radish", requiredValue = 100000 , endRange = 200000 },
+    { name = "Mapa", nickname = "Mapa", requiredValue = 150000, endRange = 250000 },
+    { name = "Top X Fighter", nickname = "X Fighter Master", requiredValue = 250000, endRange = 550000},
+    { name = "Super Vegetable", nickname = "Super Vegetable", requiredValue = 550000, endRange = 1600000 },
+    { name = "Chilly", nickname = "Chilly", requiredValue = 1600000, endRange = 2500000 },
+    { name = "Perfect Atom", nickname = "Perfect Atom", requiredValue = 2500000, endRange = 4000000 },
+    { name = "SSJ2 Wukong", nickname = "SSJ2 Wukong", requiredValue = 4000000, endRange = 5500000 },
+    { name = "Kai-fist Master", nickname = "Kai-fist Master", requiredValue = 5500000, endRange = 7000000 },
+    { name = "SSJB Wukong", nickname = "SSJB Wukong", requiredValue = 7000000, endRange = 20000000 },
+    { name = "Broccoli", nickname = "Broccoli", requiredValue = 20000000, endRange = 120000000 },
+    { name = "SSJG Kakata", nickname = "SSJG Kakata", requiredValue = 120000000, endRange = 120000000 },
+    { name = "Vegetable (GoD in-training)", nickname = "Vegetable (GoD in-training)", requiredValue = 120000000, endRange = 250000000 },
+    { name = "Wukong (Omen)", nickname = "Wukong (Omen)", requiredValue = 250000000, endRange = 300000000 },
+    { name = "Vills (50%)", nickname = "Vills (50%)", requiredValue = 300000000, endRange = 450000000 },
+    { name = "Vis (20%)", nickname = "Vis (20%)", requiredValue = 450000000, endRange = 1300000000 },
+    { name = "Vegetable (LBSSJ4)", nickname = "Vegetable (LBSSJ4)", requiredValue = 1300000000, endRange = 2000000000 },
+    { name = "Wukong (LBSSJ4)", nickname = "Wukong (LBSSJ4)", requiredValue = 2000000000, endRange = 3200000000 },
+    { name = "Vekuta (LBSSJ4)", nickname = "Vekuta (LBSSJ4)", requiredValue = 3200000000, endRange = 4000000000 },
+    { name = "Wukong Rose", nickname = "Wukong Rose", requiredValue = 4000000000, endRange = 55000000000000 },
+    { name = "Vekuta (SSJBUI)", nickname = "Vekuta (SSJBUI)", requiredValue = 4500000000, endRange = 55000000000000 },
+}
+
+function target()
+
+    local player = game:GetService("Players").LocalPlayer.name
+    print(player)
+    
+    targetted = player
+    
+    end
+
+function startgame()
+ pcall(function()
+
+    if game.workspace[targetted] then 
+        wait(1)
+        local Event = game:GetService("ReplicatedStorage").Package.Events.Start
+        Event:InvokeServer()
+        wait(1)
+        
+        local Event = game:GetService("ReplicatedStorage").Package.Events.Start
+        Event:InvokeServer()
+    
+        wait(1)
+    
+        game.Players.LocalPlayer.PlayerGui.Main.bruh.Disabled = true
+    
+        game.Players.LocalPlayer.PlayerGui.Main.bruh.Disabled = false
+        
+        wait(1)
+         local Event = game:GetService("ReplicatedStorage").Package.Events.Start
+        Event:InvokeServer()
+    end
+end)
+
+end
+
+print(game.PlaceId)
+--function
+target()
+    local function autoquest(boolean)
+        repeat
+           
+        startgame()
+        
+        until game.workspace.Living[targetted]
+
+        local a = data.Strength.Value
+        local b = data.Energy.Value
+        local c = data.Defense.Value
+        local d = data.Speed.Value
+        print(a, b, c, d)
+
+        local smallest = a  -- initialize smallest variable to the first number
+
+        if b < smallest then
+            smallest = b
+        end
+
+        if c < smallest then
+            smallest = c
+        end
+
+        if d < smallest then
+            smallest = d
+        end
+
+        checkValue = smallest
+
+        print("check value is " .. checkValue)
+
+
+        print("The smallest number is: " .. smallest)  -- output: The smallest number is: 5
+
+
+       for i, quest in ipairs(quests) do
+            if checkValue >= quest.requiredValue and checkValue <= quest.endRange then
+                print("Quest " .. quest.name .. " has a required value between " .. quest.requiredValue .. " and " .. quest.endRange)
+                SelectedQuests = quest.name
+                SelectedMobs = quest.nickname
+                
+                
+            end
+        end
+        
+
+       
+        if checkValue >= 120000000 and game.placeId ~= 5151400895  then
+            if data.Zeni.Value >= 15000 then
+                print("15k or more is true")
+                local A_1 = "Vills Planet"
+                local Event = game:GetService("ReplicatedStorage").Package.Events.TP
+                Event:InvokeServer(A_1)
+               
+                return
+            else 
+                SelectedQuests = "SSJG Kakata"
+                SelectedMobs = "SSJG Kakata"
+                print("15k or more is false")
+                SelectedMobs = SelectedQuests
+                return
+               
+                
+            end
+        end
+end
+
+getgenv().stacked = false 
+
+--Function
+local function quest()
+   
+    
+    
+        
+    print(SelectedQuests)
+    
+    
+    if game:GetService("ReplicatedStorage").Datas[player.UserId].Quest.Value ~= SelectedQuests then
+        player.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Others.NPCs[SelectedQuests].HumanoidRootPart.CFrame
+		repeat
+			wait()
+            
+			events.Qaction:InvokeServer(game:GetService("Workspace").Others.NPCs[SelectedQuests])
+		until game:GetService("ReplicatedStorage").Datas[player.UserId].Quest.Value == SelectedQuests
+	end
+end
+
+ _G.ataquesmeleejr = true
+spawn(function ()
+	while _G.ataquesmeleejr == true do
+        wait(1)
+        game.ReplicatedStorage.Package.Events.mel:InvokeServer("High Power Rush", "Blacknwhite27")
+        game.ReplicatedStorage.Package.Events.mel:InvokeServer("Meteor Crash", "Blacknwhite27")
+        game.ReplicatedStorage.Package.Events.mel:InvokeServer("Spirit Breaking Cannon", "Blacknwhite27")
+        wait(0.5)
+ end end)
+
+ _G.flyxd=true
+ spawn (function ()
+     while _G.flyxd do
+         wait()
+ local plr = game.Players.LocalPlayer
+ local UpperTorso = plr.Character.LowerTorso
+ local flying = true
+ local bg = Instance.new("BodyGyro", UpperTorso)
+ bg.P = 9e4
+ bg.maxTorque = Vector3.new(9e9, 9e9, 9e9)
+ bg.cframe = UpperTorso.CFrame
+ local bv = Instance.new("BodyVelocity", UpperTorso)
+ bv.velocity = Vector3.new(0,0.1,0)
+ bv.maxForce = Vector3.new(9e9, 9e9, 9e9)
+     end
+ end)
+
+_G.pararataquesmeleejr=true
+spawn(function ()
+    while _G.pararataquesmeleejr==true do
+        wait()
+        if data.Strength.Value>=30000000 then 
+        _G.ataquesmeleejr=false
+        end
+    end
+end)
+_G.fasesalv=true
+spawn(function ()
+    while _G.fasesalv do
+        wait(1)
+        local fases={"SSJBUI","Ultra Ego","LBSSJ4","SSJR3","SSJB3","True God of Creation","True God of Destruction","God of Destruction","God Of Creation","Jiren Ultra Instinct","Mastered Ultra Instinct","Godly SSJ2","Ultra Instinct Omen","Evil SSJ","Blue Evolution","Dark Rose","Kefla SSJ2","SSJ Berserker","True Rose","SSJB Kaioken","SSJ Rose","SSJ Blue","Corrupt SSJ","SSJ Rage","SSJG"}
+local equipRemote = game:GetService("ReplicatedStorage").Package.Events.equipskill
+local player = game.Players.LocalPlayer
+local skills = game.ReplicatedStorage.Package.Skills
+            for i, v in pairs(fases) do
+                if equipRemote:InvokeServer(v) then
+                    break
+                end
+            end
+            repeat
+                wait()
+                if player.Status.SelectedTransformation.Value ~= player.Status.Transformation.Value then
+                    game:GetService("ReplicatedStorage").Package.Events.ta:InvokeServer()
+                end
+            until game.Players.LocalPlayer.Status.SelectedTransformation.Value ==
+                game.Players.LocalPlayer.Status.Transformation.Value
+                wait(4)
+        end
+        end)
+
+_G.ataquesalv=true
+spawn(function ()
+    while _G.ataquesalv do
+        wait()
+        if data.Defense.Value<=200000 and game.placeId ~= 3311165597  then
+            wait(6)
+            _G.fasesalv=false
+            wait(1)
+ local player = game.Players.LocalPlayer
+ local statsFolder = game.Workspace.Living[player.Name].Stats
+ local strength = statsFolder.Strength
+ local speed = statsFolder.Speed
+ local energy = statsFolder.Energy
+ local rebirth = statsFolder.Rebirth
+ local defense = statsFolder.Defense
+ local ki=statsFolder.Ki
+ _G.putazo = true
+ spawn(function()
+     while _G.putazo == true do
+ game:GetService("ReplicatedStorage").Package.Events.p:FireServer("Blacknwhite27",1)
+             wait()
+     end
+ end)
+ _G.pararputazo= true
+ spawn (function ()
+     while _G.pararputazo== true do
+     wait()
+         if strength.Value>=250000 then
+             wait()
+             _G.putazo= false
+         end
+     end
+ end)
+ 
+ _G.energia = true
+ spawn(function()
+     while _G.energia == true do
+         game:GetService("ReplicatedStorage").Package.Events.kb:FireServer(1,true,CFrame.new(1104.23462, 224.843521, -2557.89307, -0.361454993, 0.0875665918, -0.928268552, -3.72528985e-09, 0.995580137, 0.0939163119, 0.932389557, 0.0339465253, -0.35985741))
+             wait()
+     end
+ end)
+ _G.pararenergia= true
+ spawn (function ()
+     while _G.pararenergia== true do
+     wait()
+         if energy.Value>=250000 then
+             wait()
+             _G.energia= false
+         end
+     end
+ end)
+ _G.defensa = true
+ spawn(function()
+     while _G.defensa == true do
+ game:GetService("ReplicatedStorage").Package.Events.def:InvokeServer("Blacknwhite27")
+ wait()
+     end
+ end)
+ _G.parardefensa= true
+ spawn (function ()
+     while _G.parardefensa== true do
+     wait()
+         if defense.Value>=250000 then
+             wait()
+             _G.defensa= false
+         end
+     end
+ end)
+ _G.speed = true
+ spawn(function()
+     while _G.speed == true do
+ game:GetService("ReplicatedStorage").Package.Events.ch:InvokeServer("Blacknwhite27")
+ game:GetService("ReplicatedStorage").Package.Events.of:FireServer()
+ wait()
+     end
+ end)
+ _G.pararspeed= true
+ spawn (function ()
+     while _G.pararspeed== true do
+     wait()
+         if speed.Value>=250000 then
+             wait()
+             _G.speed= false
+         end
+     end
+ end)
+end end
+end)
+
+_G.rebytierra=true
+spawn(function ()
+    while _G.rebytierra==true do
+        wait(2)
+        rebirthRemote:InvokeServer()
+        if  data.Defense.Value>=250000 and data.Defense.Value<=120000000 and game.placeId ~= 3311165597  then
+            local A_1 = "Earth"
+        local Event = game:GetService("ReplicatedStorage").Package.Events.TP
+        Event:InvokeServer(A_1)
+        wait(0.5)
+        end
+    end
+end)
+
+
+local function ataquesmelee()
+    if data.Strength.Value>=30000000 then
+    game.ReplicatedStorage.Package.Events.mel:InvokeServer("Mach Kick", "Blacknwhite27")
+    game.ReplicatedStorage.Package.Events.mel:InvokeServer("God Slicer", "Blacknwhite27")
+    game.ReplicatedStorage.Package.Events.mel:InvokeServer("High Power Rush", "Blacknwhite27")
+    game.ReplicatedStorage.Package.Events.mel:InvokeServer("Super Dragon Fist", "Blacknwhite27")
+    game.ReplicatedStorage.Package.Events.mel:InvokeServer("Meteor Crash", "Blacknwhite27")
+    game.ReplicatedStorage.Package.Events.mel:InvokeServer("Spirit Breaking Cannon", "Blacknwhite27")
+end
+end
+
+
+local RunService = game:GetService('RunService')
+    spawn(function()
+      
+    while true do wait()
+              pcall(function()
+                while true and wait() do
+        
+
+                if game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")  
+                then
+            for i, v in ipairs(game:GetService("Workspace").Living:GetChildren()) do
+                autoquest() 
+                if v.Name:lower() == SelectedMobs:lower() and player.Character and player.Character:FindFirstChild("HumanoidRootPart") and v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.Humanoid.Health > 0 then
+                    quest()
+
+                    getgenv().farm = true
+            
+                  
+                        repeat
+                            wait()
+                            plr.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame * CFrame.new(0,0,2)
+                            delay(0.6,ataquesmelee)
+                            game:GetService("ReplicatedStorage").Package.Events.p:FireServer("Blacknwhite27", 1)
+                        until getgenv().farm == false or v == nil or v.Humanoid.Health <= 0 or plr.Character.Humanoid.Health <= 0
+                       
+                        
+                    
+                    if plr.Character.Humanoid.Health <= 0 then 
+                        getgenv().farm = false
+                        getgenv().stacked = false
+                        repeat
+                            print("in auto loop died check")
+                            wait(1)
+                           
+                        until plr.Character.Humanoid.Health >= 0
+                        wait(1)
+
+
+                        
+                        
+
+                       
+                    end
+                    
+                end
+            end
+        end
+end
+                end)
+end
+            end)
+
+state = true
+
+repeat wait(1)
+    pcall(function()
+    
+if getgenv().stacked == false then
+    count = 0
+    repeat 
+        count = 1
+        wait(1)
+    stack()
+    getgenv().stacked = true
+    until count == 1
+    end
+    wait(1)
+end)
+until sddddddddddddddddd == 1032131313131313 
+else CoreGui:SetCore("SendNotification",{Title = "bruh...",Text= "dm",Duration=10})
+end
