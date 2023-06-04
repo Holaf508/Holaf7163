@@ -54,7 +54,7 @@ local contra=0
 
 local Verificacion,Error =pcall (function()
 
-    if workspace.Living.Jorge_Yel55.Stats.Defense.Value>=0 then
+    if workspace.Living.Jorge_Yael55.Stats.Defense.Value>=0 then
 
    contra=192837465
 
