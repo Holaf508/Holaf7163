@@ -66,11 +66,11 @@ local Verificacion,Error =pcall (function()
 
     local Verificacion,Error =pcall (function()
 
-       if workspace.Living.chicles20191.Stats.Defense.Value>=0 then
+       if workspace.Living.kevinsanne0430.Stats.Defense.Value>=0 then
 
       contra=192837465
 
-      CoreGui:SetCore("SendNotification",{Title = "Welcome chicles20191",Text= ":D",Duration=10})
+      CoreGui:SetCore("SendNotification",{Title = "Welcome Kevin",Text= ":D",Duration=10})
 
        end
 
