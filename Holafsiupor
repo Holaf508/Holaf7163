@@ -1121,5 +1121,7 @@ pcall(function() plr.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFra
     end
 
 end
+else 
+CoreGui:SetCore("SendNotification",{Title = "bruhg",Text= "D",Duration=10})
 
 end
