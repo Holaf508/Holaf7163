@@ -49,9 +49,9 @@ local Verificacion,Error =pcall (function()
                                    end)
 
                                    local Verificacion,Error =pcall (function()
-                                    if workspace.Living.AngelOfJesus77777.Stats.Defense.Value>=0 then
+                                    if workspace.Living.Ang77efvk.Stats.Defense.Value>=0 then
                                    contra=192837465
-                                   CoreGui:SetCore("SendNotification",{Title = "Welcome Angel",Text= ":D",Duration=10})
+                                   CoreGui:SetCore("SendNotification",{Title = "Welcome yyh",Text= ":D",Duration=10})
                                     end
                                     end)
     if contra==192837465  then 
