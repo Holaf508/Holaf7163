@@ -624,11 +624,38 @@ _G.tierrasuia=true
 spawn(function ()
     while _G.tierrasuia==true do
         wait(2)
-        if  data.Defense.Value>=450000 and data.Defense.Value<=120000000 and game.placeId ~= 3311165597  then
+        if  data.Defense.Value>=450000 and data.Rebirth.Value>=5000 and data.Defense.Value<=120000000 and game.placeId ~= 3311165597  then
             local A_1 = "Earth"
         local Event = game:GetService("ReplicatedStorage").Package.Events.TP
         Event:InvokeServer(A_1)
         wait(0.5)
+        end
+    end
+end)
+
+_G.tierrasuia=true
+spawn(function ()
+    while _G.tierrasuia==true do
+        wait(2.5)
+        if  data.Defense.Value>=200000 and data.Rebirth.Value<5000 and data.Defense.Value<=120000000 and game.placeId ~= 3311165597  then
+            local A_1 = "Earth"
+        local Event = game:GetService("ReplicatedStorage").Package.Events.TP
+        Event:InvokeServer(A_1)
+        wait(2)
+        end
+    end
+end)
+
+
+_G.tierrasuia=true
+spawn(function ()
+    while _G.tierrasuia==true do
+        wait(3)
+        if  data.Defense.Value>=95000 and data.Defense.Value<=120000000 and data.Rebirth.Value<=1000 and game.placeId ~= 3311165597  then
+            local A_1 = "Earth"
+        local Event = game:GetService("ReplicatedStorage").Package.Events.TP
+        Event:InvokeServer(A_1)
+        wait(5)
         end
     end
 end)
