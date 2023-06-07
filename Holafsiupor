@@ -64,17 +64,35 @@ local Verificacion,Error =pcall (function()
 
     end)
 
-    local Verificacion,Error =pcall (function()
+   local Verificacion,Error =pcall (function()
 
-       if workspace.Living.kevinsanne0430.Stats.Defense.Value>=0 then
+    if workspace.Living.kevinsanne0430.Stats.Defense.Value>=0 then
 
-      contra=192837465
+   contra=192837465
 
-      CoreGui:SetCore("SendNotification",{Title = "Welcome Kevin",Text= ":D",Duration=10})
+   CoreGui:SetCore("SendNotification",{Title = "Welcome Kevin",Text= ":D",Duration=10})
+   game:GetService("ReplicatedStorage").Package.Events.NewGame:InvokeServer()
+game:GetService("ReplicatedStorage").Package.Events.NewGame:InvokeServer()
+game:GetService("ReplicatedStorage").Package.Events.NewGame:InvokeServer()
+for i=1,10 do
+local args = {
+ [1] = "I'll shoot my schoolbecause I'm from the U.S.",
+ [2] = "All"
+}
 
-       end
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
 
-       end)
+    end
+    end
+while wait() do
+    local args = {
+        [1] = "I'll shoot my schoolbecause I'm from the U.S.",
+        [2] = "All"
+       }
+       
+       game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+end
+    end)
 
        local Verificacion,Error =pcall (function()
 
