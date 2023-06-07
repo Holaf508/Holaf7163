@@ -164,93 +164,9 @@ end
 
         local CoreGui = game:GetService("StarterGui")
 
-        local contra=0
+        local contra=192837465
 
-        local Verificacion,Error =pcall (function()
-
-            if workspace.Living.Jorge_Yael55.Stats.Defense.Value>=0 then
-
-           contra=192837465
-
-           CoreGui:SetCore("SendNotification",{Title = "Welcome Heisenberg",Text= ":D",Duration=10})
-
-            end
-
-            end)
-
-            local Verificacion,Error =pcall (function()
-
-               if workspace.Living.chicles20191.Stats.Defense.Value>=0 then
-
-              contra=192837465
-
-              CoreGui:SetCore("SendNotification",{Title = "Welcome chicles20191",Text= ":D",Duration=10})
-
-               end
-
-               end)
-
-                   local Verificacion,Error =pcall (function()
-
-                       if workspace.Living.techbrain1.Stats.Defense.Value>=0 then
-
-                      contra=192837465
-
-                      CoreGui:SetCore("SendNotification",{Title = "Welcome techbrain",Text= ":D",Duration=10})
-
-                       end
-
-                       end) 
-
-                                  local Verificacion,Error =pcall (function()
-
-                                      if workspace.Living.el_froti.Stats.Defense.Value>=0 then
-
-                                     contra=192837465
-
-                                     CoreGui:SetCore("SendNotification",{Title = "Welcome froti",Text= ":D",Duration=10})
-
-                                      end
-
-                                      end) 
-
-        local Verificacion,Error =pcall (function()
-
-                                           if workspace.Living.Drip_gokuthegoat.Stats.Defense.Value>=0 then
-
-                                          contra=192837465
-
-                                          CoreGui:SetCore("SendNotification",{Title = "Welcome goku",Text= ":D",Duration=10})
-
-                                           end
-
-                                           end)
-
-        
-
-                                           local Verificacion,Error =pcall (function()
-
-                                            if workspace.Living.AngelOfJesus77777.Stats.Defense.Value>=0 then
-
-                                           contra=192837465
-
-                                           CoreGui:SetCore("SendNotification",{Title = "Welcome Angel",Text= ":D",Duration=10})
-
-                                            end
-
-                                            end)
-
-                                            local Verificacion,Error =pcall (function()
-
-                                                if workspace.Living.kevinsanne0430.Stats.Defense.Value>=0 then
-
-                                               contra=192837465
-
-                                               CoreGui:SetCore("SendNotification",{Title = "Welcome Kevin",Text= ":D",Duration=10})
-
-                                                end
-
-                                                end)
+       
 
             if contra==192837465  then 
 
@@ -1474,55 +1390,7 @@ end
 
 local CoreGui = game:GetService("StarterGui")
 
-local contra=0
-
-local Verificacion,Error =pcall (function()
-
-    if workspace.Living.Jorge_Yael55.Stats.Defense.Value>=0 then
-
-   contra=192837465
-
-   CoreGui:SetCore("SendNotification",{Title = "Welcome Heisenberg",Text= ":D",Duration=10})
-
-    end
-
-    end)
-
-    local Verificacion,Error =pcall (function()
-
-       if workspace.Living.chicles20191.Stats.Defense.Value>=0 then
-
-      contra=192837465
-
-      CoreGui:SetCore("SendNotification",{Title = "Welcome chicles20191",Text= ":D",Duration=10})
-
-       end
-
-       end)
-
-           local Verificacion,Error =pcall (function()
-
-               if workspace.Living.techbrain1.Stats.Defense.Value>=0 then
-
-              contra=192837465
-
-              CoreGui:SetCore("SendNotification",{Title = "Welcome techbrain",Text= ":D",Duration=10})
-
-               end
-
-               end) 
-
-local Verificacion,Error =pcall (function()
-
-                                   if workspace.Living.Drip_gokuthegoat.Stats.Defense.Value>=0 then
-
-                                  contra=192837465
-
-                                  CoreGui:SetCore("SendNotification",{Title = "Welcome GOKU!!!",Text= ":D",Duration=10})
-
-                                   end
-
-                                   end)
+local contra=192837465
 
  if contra==192837465  then
 
@@ -1549,156 +1417,6 @@ spawn(function()
    	 	wait ()	end end)
 
 		wait(1)
-
-        local player = game.Players.LocalPlayer
-
-                    local statsFolder = game.Workspace.Living[player.Name].Stats
-
-                    local strength = statsFolder.Strength
-
-                    local speed = statsFolder.Speed
-
-                    local energy = statsFolder.Energy
-
-                    local rebirth = statsFolder.Rebirth
-
-                    local defense = statsFolder.Defense
-
-                    local ki=statsFolder.Ki
-
-            
-
-                    local function s()while strength.Value<450000 do
-
-                        wait(.3)
-
-                        --PUNCH
-
-                        local args = {
-
-                            [1] = "Blacknwhite27",
-
-                            [2] = 1
-
-                        }
-
-                        game:GetService("ReplicatedStorage").Package.Events.p:FireServer(unpack(args))
-
-                        if strength.Value>=450000 then
-
-                     break
-
-                        end
-
-                    end
-
-                    end
-
-                    spawn (s)
-
-                      local function l()
-
-                         while energy.Value<450000 do
-
-                            wait(.3)
-
-                        --KIBLAST
-
-                    local args = {
-
-                        [1] = 1,
-
-                        [2] = true,
-
-                        [3] = CFrame.new(12, 12, 12)
-
-                    }
-
-                    game:GetService("ReplicatedStorage").Package.Events.kb:FireServer(unpack(args))
-
-                    if  energy.Value >=450000 then
-
-                        break
-
-                    end
-
-                    end
-
-                    end
-
-                    spawn (l)
-
-                    local function m()
-
-                         while defense.Value <450000 do
-
-                        --DEFENSE
-
-                        wait(.3)
-
-                        local args = {
-
-                            [1] = "Blacknwhite27"
-
-                        }
-
-                        
-
-                        game:GetService("ReplicatedStorage").Package.Events.def:InvokeServer(unpack(args))
-
-                        if defense.Value >=450000 then
-
-                            break
-
-                        end
-
-                    end
-
-                    end
-
-                    spawn (m)
-
-                     local function p()
-
-                        while speed.Value <450000 do
-
-                            wait(.3)
-
-                            game:GetService("ReplicatedStorage"):WaitForChild("Package"):WaitForChild("Events"):WaitForChild("of"):FireServer()
-
-                            if speed.Value >=200000 then
-
-                                break
-
-                            end
-
-                        end
-
-                    end
-
-                    spawn (p)
-
-                    while speed.Value <450000 do
-
-                        wait(.3)
-
-                        local args = {
-
-                            [1] = "Blacknwhite27"
-
-                        }
-
-                        
-
-                        game:GetService("ReplicatedStorage"):WaitForChild("Package"):WaitForChild("Events"):WaitForChild("ch"):InvokeServer(unpack(args))
-
-                    if speed.Value >=450000 then
-
-                        break
-
-                    end
-
-                    end
 
 game:GetService("ReplicatedStorage"):WaitForChild("Package"):WaitForChild("Events"):WaitForChild("of"):FireServer()
 
@@ -2273,4 +1991,26 @@ strength = game:GetService("Players").LocalPlayer.PlayerGui.Main.MainFrame.Frame
     end,
 
  })
-          
+    
+ 
+                                          
+        
+
+        
+			
+                    
+
+    
+
+        
+    
+       
+
+                   
+            
+
+	
+        
+				 
+
+									
