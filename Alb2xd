@@ -151,7 +151,6 @@ return
     Flag = "MinimumStatsManuales", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
     Callback = function(acas)
        _G.statsrequerimientose=false
-       if _G.statsrequerimientose==true then 
     punchsea=false
     vamonosabillspapu=false
     energyaweda=false
@@ -172,11 +171,14 @@ return
             end
         end
     end)
-end
 
 if acas then
     _G.tierrasuiauno=false
-
+    punchsea=true
+    energyaweda=true
+    defenseaea=true
+    speedeeed=true
+    vamonosabillspapu=true
     _G.statsrequerimientose=true
     local player = game.Players.LocalPlayer
     local statsFolder = game.Workspace.Living[player.Name].Stats
@@ -186,11 +188,6 @@ while strength.Value<=800000 and game.placeId ~= 3311165597 do
     local player = game:GetService("Players").LocalPlayer
         local player = game.Players.LocalPlayer
         local data = game.ReplicatedStorage.Datas[player.UserId]
-    punchsea=true
-    energyaweda=true
-    defenseaea=true
-    speedeeed=true
-    vamonosabillspapu=true
 end
 end
 
