@@ -19,21 +19,20 @@ local Window = Rayfield:CreateWindow({
 
     KeySystem = true, -- Set this to true to use our key system
     KeySettings = {
-       Title = "ESPERA",
-    Subtitle = "Actualizando script...",
-       Note = "Script en actualizacion",
+       Title = "WTF",
+    Subtitle = "Contraseña",
+       Note = "La key esta en mi discord---TocinoRikolin0#2979",
        FileName = "TocinoCode13871460", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
        SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
        GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
-       Key = {"3r97623yuorg9q3r70y80wdtawoud"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+       Key = {"129146147919496142"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
     }
  })
 
 
 --slider
  --inicio de menu
- local Tab = Window:CreateTab("FarmRebirths", 4483362458) -- Title, Image
-
+ local Tab = Window:CreateTab("Farm", 4483362458) -- Title, Image
 
  local Toggle = Tab:CreateToggle({
     Name = "Bills Planet",
@@ -66,135 +65,6 @@ end
     end,
  })
 
-  --requerimiento para ir a la tierra
-  local Slider = Tab:CreateSlider({
-    Name = "RequerimientoTierra",
-    Range = {50000,800000},
-    Increment = 1,
-    Suffix = "AtaquesManuales",
-    CurrentValue = 50000,
-    Flag = "StatsManuales", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
-    Callback = function(Value)
-        local player = game.Players.LocalPlayer
-		local statsFolder = game.Workspace.Living[player.Name].Stats
-		local strength = statsFolder.Strength
-		local speed = statsFolder.Speed
-		local energy = statsFolder.Energy
-		local rebirth = statsFolder.Rebirth
-		local defense = statsFolder.Defense
-		local ki=statsFolder.Ki
-spawn(function ()
-while punchsea do
-    wait()
-    while strength.Value<=Value do
-        wait()
-    game:GetService("ReplicatedStorage").Package.Events.p:FireServer(unpack(args))
-if strength.Value>=Value then
-    break
-end
-end 
-end
-end)
-spawn(function ()
-    while energyaweda do
-        wait()
-        while energy.Value<=Value do
-            game:GetService("ReplicatedStorage").Package.Events.kb:FireServer(unpack(args))
-    if energy.Value>=Value then
-        break
-    end
-        end 
-    end
-    end)
-    spawn(function ()
-        while defenseaea do
-            wait()
-           while defense.Value<=Value do
-wait()
-                game:GetService("ReplicatedStorage").Package.Events.def:InvokeServer(unpack(args))
-       if defense.Value>=Value then
-        break
-       end
-            end 
-        end
-        end)
-
-        spawn(function ()
-            while speedeeed do
-                wait()
-                while speed.Value<=Value do
-                    wait()
-                    game:GetService("ReplicatedStorage"):WaitForChild("Package"):WaitForChild("Events"):WaitForChild("ch"):InvokeServer(unpack(args))
-                    game:GetService("ReplicatedStorage"):WaitForChild("Package"):WaitForChild("Events"):WaitForChild("of"):FireServer()
-           if speed.Value>=Value then
-            break
-           end
-                end 
-            end
-            end)
-while vamonosabillspapu do
-    wait()
-            if  speed.Value>=Value and defense.Value<=120000000 and game.placeId ~= 3311165597 then
-                local A_1 = "Earth"
-                local Event = game:GetService("ReplicatedStorage").Package.Events.TP
-                Event:InvokeServer(A_1)
-            end
-            wait(4)
-        end
-return
-    end,
- })
-
- local Toggle = Tab:CreateToggle({
-    Name = "MinimoRequerimiento",
-    CurrentValue = false,
-    Flag = "MinimumStatsManuales", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
-    Callback = function(acas)
-       _G.statsrequerimientose=false
-    punchsea=false
-    vamonosabillspapu=false
-    energyaweda=false
-    defenseaea=false
-    speedeeed=false
-    _G.tierrasuiauno=true
-    spawn(function ()
-        while _G.tierrasuia do
-            local player = game:GetService("Players").LocalPlayer
-        local player = game.Players.LocalPlayer
-        local data = game.ReplicatedStorage.Datas[player.UserId]
-            wait()
-            if  data.Defense.Value<=120000000 and game.placeId ~= 3311165597  then
-                local A_1 = "Earth"
-            local Event = game:GetService("ReplicatedStorage").Package.Events.TP
-            Event:InvokeServer(A_1)
-            wait(5)
-            end
-        end
-    end)
-
-if acas then
-    _G.tierrasuiauno=false
-    punchsea=true
-    energyaweda=true
-    defenseaea=true
-    speedeeed=true
-    vamonosabillspapu=true
-    _G.statsrequerimientose=true
-    local player = game.Players.LocalPlayer
-    local statsFolder = game.Workspace.Living[player.Name].Stats
-    local strength = statsFolder.Strength
-while strength.Value<=800000 and game.placeId ~= 3311165597 do
-    wait(8)
-    local player = game:GetService("Players").LocalPlayer
-        local player = game.Players.LocalPlayer
-        local data = game.ReplicatedStorage.Datas[player.UserId]
-end
-end
-
-    -- The function that takes place when the toggle is pressed
-    -- The variable (Value) is a boolean on whether the toggle is true or false
-    end,
- })
 
  local Toggle = Tab:CreateToggle({
     Name = "Farm01",
@@ -451,6 +321,345 @@ ab.Text="You went idle and ROBLOX tried to kick you but we reflected it!"wait(2)
             end
         end)
 
+        _G.ataques=true
+spawn(function ()
+while _G.ataques do
+    wait()
+    if data.Defense.Value<=450000 then
+        if data.Rebirth.Value>=5000 then
+wait(8.5)
+    local player = game.Players.LocalPlayer
+		local statsFolder = game.Workspace.Living[player.Name].Stats
+		local strength = statsFolder.Strength
+		local speed = statsFolder.Speed
+		local energy = statsFolder.Energy
+		local rebirth = statsFolder.Rebirth
+		local defense = statsFolder.Defense
+		local ki=statsFolder.Ki
+
+		local function s()while strength.Value<450000 do
+			wait(.3)
+			--PUNCH
+			local args = {
+				[1] = "Blacknwhite27",
+				[2] = 1
+			}
+			game:GetService("ReplicatedStorage").Package.Events.p:FireServer(unpack(args))
+			if strength.Value>=450000 then
+		 break
+			end
+		end
+		end
+		spawn (s)
+		  local function l()
+			 while energy.Value<450000 do
+				wait(.3)
+			--KIBLAST
+		local args = {
+			[1] = 1,
+			[2] = true,
+			[3] = CFrame.new(12, 12, 12)
+		}
+		game:GetService("ReplicatedStorage").Package.Events.kb:FireServer(unpack(args))
+		if  energy.Value >=450000 then
+			break
+		end
+		end
+		end
+		spawn (l)
+		local function m()
+			 while defense.Value <450000 do
+			--DEFENSE
+			wait(.3)
+			local args = {
+				[1] = "Blacknwhite27"
+			}
+			
+			game:GetService("ReplicatedStorage").Package.Events.def:InvokeServer(unpack(args))
+			if defense.Value >=450000 then
+				break
+			end
+		end
+		end
+		spawn (m)
+		 local function p()
+			while speed.Value <450000 do
+				wait(.3)
+				game:GetService("ReplicatedStorage"):WaitForChild("Package"):WaitForChild("Events"):WaitForChild("of"):FireServer()
+				if speed.Value >=450000 then
+					break
+				end
+			end
+		end
+		spawn (p)
+		while speed.Value <450000 do
+			wait(.3)
+			local args = {
+				[1] = "Blacknwhite27"
+			}
+			
+			game:GetService("ReplicatedStorage"):WaitForChild("Package"):WaitForChild("Events"):WaitForChild("ch"):InvokeServer(unpack(args))
+		if speed.Value >=450000 then
+			break
+		end
+		end
+    end
+end
+end
+wait(2)
+end)
+
+_G.xadwasdadwd=true
+spawn(function ()
+while _G.xadwasdadwd do
+    wait(0.5)
+    if data.Rebirth.Value<5000 then
+        _G.ataques=false
+    end
+    wait(50)
+end    
+end)
+
+
+
+_G.ataquestwo=true
+spawn(function ()
+while _G.ataquestwo do
+    wait()
+    if data.Defense.Value<=450000 then
+        if data.Rebirth.Value>=1000 and data.Rebirth.Value<5000 then
+wait(8.5)
+    local player = game.Players.LocalPlayer
+		local statsFolder = game.Workspace.Living[player.Name].Stats
+		local strength = statsFolder.Strength
+		local speed = statsFolder.Speed
+		local energy = statsFolder.Energy
+		local rebirth = statsFolder.Rebirth
+		local defense = statsFolder.Defense
+		local ki=statsFolder.Ki
+
+		local function s()while strength.Value<200000 do
+			wait(.3)
+			--PUNCH
+			local args = {
+				[1] = "Blacknwhite27",
+				[2] = 1
+			}
+			game:GetService("ReplicatedStorage").Package.Events.p:FireServer(unpack(args))
+			if strength.Value>=200000 then
+		 break
+			end
+		end
+		end
+		spawn (s)
+		  local function l()
+			 while energy.Value<200000 do
+				wait(.3)
+			--KIBLAST
+		local args = {
+			[1] = 1,
+			[2] = true,
+			[3] = CFrame.new(12, 12, 12)
+		}
+		game:GetService("ReplicatedStorage").Package.Events.kb:FireServer(unpack(args))
+		if  energy.Value >=200000 then
+			break
+		end
+		end
+		end
+		spawn (l)
+		local function m()
+			 while defense.Value <200000 do
+			--DEFENSE
+			wait(.3)
+			local args = {
+				[1] = "Blacknwhite27"
+			}
+			
+			game:GetService("ReplicatedStorage").Package.Events.def:InvokeServer(unpack(args))
+			if defense.Value >=200000 then
+				break
+			end
+		end
+		end
+		spawn (m)
+		 local function p()
+			while speed.Value <200000 do
+				wait(.3)
+				game:GetService("ReplicatedStorage"):WaitForChild("Package"):WaitForChild("Events"):WaitForChild("of"):FireServer()
+				if speed.Value >=200000 then
+					break
+				end
+			end
+		end
+		spawn (p)
+		while speed.Value <200000 do
+			wait(.3)
+			local args = {
+				[1] = "Blacknwhite27"
+			}
+			
+			game:GetService("ReplicatedStorage"):WaitForChild("Package"):WaitForChild("Events"):WaitForChild("ch"):InvokeServer(unpack(args))
+		if speed.Value >=200000 then
+			break
+		end
+		end
+    end
+end
+end
+wait(2)
+end)
+
+_G.xadwasdadwdtwo=true
+spawn(function ()
+while _G.xadwasdadwdtwo do
+    wait(0.5)
+    if data.Rebirth.Value<1000 then
+        _G.ataquestwo=false
+    end
+    wait(50)
+end    
+end)
+
+
+_G.ataquestrxd=true
+spawn(function ()
+while _G.ataquestrxd do
+    wait()
+    if data.Defense.Value<=450000 then
+        if data.Rebirth.Value<1000 then
+wait(8.5)
+    local player = game.Players.LocalPlayer
+		local statsFolder = game.Workspace.Living[player.Name].Stats
+		local strength = statsFolder.Strength
+		local speed = statsFolder.Speed
+		local energy = statsFolder.Energy
+		local rebirth = statsFolder.Rebirth
+		local defense = statsFolder.Defense
+		local ki=statsFolder.Ki
+
+		local function s()while strength.Value<950000 do
+			wait(.3)
+			--PUNCH
+			local args = {
+				[1] = "Blacknwhite27",
+				[2] = 1
+			}
+			game:GetService("ReplicatedStorage").Package.Events.p:FireServer(unpack(args))
+			if strength.Value>=950000 then
+		 break
+			end
+		end
+		end
+		spawn (s)
+		  local function l()
+			 while energy.Value<950000 do
+				wait(.3)
+			--KIBLAST
+		local args = {
+			[1] = 1,
+			[2] = true,
+			[3] = CFrame.new(12, 12, 12)
+		}
+		game:GetService("ReplicatedStorage").Package.Events.kb:FireServer(unpack(args))
+		if  energy.Value >=950000 then
+			break
+		end
+		end
+		end
+		spawn (l)
+		local function m()
+			 while defense.Value <950000 do
+			--DEFENSE
+			wait(.3)
+			local args = {
+				[1] = "Blacknwhite27"
+			}
+			
+			game:GetService("ReplicatedStorage").Package.Events.def:InvokeServer(unpack(args))
+			if defense.Value >=950000 then
+				break
+			end
+		end
+		end
+		spawn (m)
+		 local function p()
+			while speed.Value <950000 do
+				wait(.3)
+				game:GetService("ReplicatedStorage"):WaitForChild("Package"):WaitForChild("Events"):WaitForChild("of"):FireServer()
+				if speed.Value >=950000 then
+					break
+				end
+			end
+		end
+		spawn (p)
+		while speed.Value <950000 do
+			wait(.3)
+			local args = {
+				[1] = "Blacknwhite27"
+			}
+			
+			game:GetService("ReplicatedStorage"):WaitForChild("Package"):WaitForChild("Events"):WaitForChild("ch"):InvokeServer(unpack(args))
+		if speed.Value >=950000 then
+			break
+		end
+		end
+    end
+end
+end
+end)
+
+_G.xadwasdadwdtwoa=true
+spawn(function ()
+while _G.xadwasdadwdtwoa do
+    wait(0.5)
+    if data.Rebirth.Value>1000 then
+        _G.ataquestrxd=false
+    end
+    wait(50)
+end    
+end)
+
+_G.tierrasuia=true
+spawn(function ()
+    while _G.tierrasuia==true do
+        wait(2)
+        if  data.Defense.Value>=450000 and data.Rebirth.Value>=5000 and data.Defense.Value<=120000000 and game.placeId ~= 3311165597  then
+            local A_1 = "Earth"
+        local Event = game:GetService("ReplicatedStorage").Package.Events.TP
+        Event:InvokeServer(A_1)
+        wait(0.5)
+        end
+    end
+end)
+
+_G.tierrasuia=true
+spawn(function ()
+    while _G.tierrasuia==true do
+        wait(2.5)
+        if  data.Defense.Value>=200000 and data.Rebirth.Value<5000 and data.Defense.Value<=120000000 and game.placeId ~= 3311165597  then
+            local A_1 = "Earth"
+        local Event = game:GetService("ReplicatedStorage").Package.Events.TP
+        Event:InvokeServer(A_1)
+        wait(2)
+        end
+    end
+end)
+
+
+_G.tierrasuia=true
+spawn(function ()
+    while _G.tierrasuia==true do
+        wait(3)
+        if  data.Defense.Value>=95000 and data.Defense.Value<=120000000 and data.Rebirth.Value<=1000 and game.placeId ~= 3311165597  then
+            local A_1 = "Earth"
+        local Event = game:GetService("ReplicatedStorage").Package.Events.TP
+        Event:InvokeServer(A_1)
+        wait(5)
+        end
+    end
+end)
+
         _G.fasesalv=true
         spawn(function ()
             while _G.fasesalv do
@@ -487,19 +696,6 @@ spawn(function ()
     end
 end)
 
-_G.tpbillssiuonoaw=true
-spawn(function ()
-while _G.tpbillsaytomatico do
-    wait()
-    if data.Defense.Value<=120000000 and game.placeId ~= 3311165597 then
-    wait(55)
-    local A_1 = "Vills Planet"
-        local Event = game:GetService("ReplicatedStorage").Package.Events.TP
-        Event:InvokeServer(A_1)
-end
-wait(10)
-end
-end)
 
         _G.restartxd=true
         spawn(function ()
@@ -507,7 +703,7 @@ end)
                 wait()
                 if  data.Defense.Value<=450000 and game.placeId ~= 3311165597  then
                     game.Players.LocalPlayer.Character.Humanoid.Health = 0
-                    wait(120)
+                    wait(50)
                 end
             end
         end)
@@ -1175,5 +1371,89 @@ local Button = Tab:CreateButton({
         end;
     -- The function that takes place when the slider changes
     -- The variable (Value) is a number which correlates to the value the slider is currently at
+    end,
+ })
+
+
+
+
+ --requerimiento para ir a la tierra
+ local Slider = Tab:CreateSlider({
+    Name = "RequerimientoTierra",
+    Range = {50000,800000},
+    Increment = 1,
+    Suffix = "AtaquesManuales",
+    CurrentValue = 50000,
+    Flag = "StatsManuales", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+    Callback = function(Value)
+        local player = game.Players.LocalPlayer
+		local statsFolder = game.Workspace.Living[player.Name].Stats
+		local strength = statsFolder.Strength
+		local speed = statsFolder.Speed
+		local energy = statsFolder.Energy
+		local rebirth = statsFolder.Rebirth
+		local defense = statsFolder.Defense
+		local ki=statsFolder.Ki
+spawn(function ()
+while punchsea do
+    wait()
+    if strength.Value<=Value then
+    game:GetService("ReplicatedStorage").Package.Events.p:FireServer(unpack(args))
+end 
+end
+end)
+
+spawn(function ()
+    while energyaweda do
+        wait()
+        if energy.Value<=Value then
+            game:GetService("ReplicatedStorage").Package.Events.kb:FireServer(unpack(args))
+    end 
+    end
+    end)
+    spawn(function ()
+        while defenseaea do
+            wait()
+            if defense.Value<=Value then
+                game:GetService("ReplicatedStorage").Package.Events.def:InvokeServer(unpack(args))
+        end 
+        end
+        end)
+        spawn(function ()
+            while speedeeed do
+                wait()
+                if speed.Value<=Value then
+                    game:GetService("ReplicatedStorage"):WaitForChild("Package"):WaitForChild("Events"):WaitForChild("ch"):InvokeServer(unpack(args))
+                    game:GetService("ReplicatedStorage"):WaitForChild("Package"):WaitForChild("Events"):WaitForChild("of"):FireServer()
+            end 
+            end
+            end)
+    end,
+ })
+
+ local Toggle = Tab:CreateToggle({
+    Name = "Requerimiento Si o No",
+    CurrentValue = false,
+    Flag = "MinimumStatsManuales", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+    Callback = function(acas)
+
+       _G.statsrequerimientose=false
+    punchsea=false
+    energyaweda=false
+    defenseaea=false
+    speedeeed=false
+
+    
+if acas then
+    _G.statsrequerimientose=true
+    punchsea=true
+    energyaweda=true
+    defenseaea=true
+    speedeeed=true
+
+end
+
+    -- The function that takes place when the toggle is pressed
+    -- The variable (Value) is a boolean on whether the toggle is true or false
     end,
  })
