@@ -825,11 +825,8 @@ local rebirthRemote = game:GetService("ReplicatedStorage").Package.Events.reb
 
 local npcPosition = CFrame.new(0, 0, 2)
 
-local Forms = {'SSJBUI','Ultra Ego', 'LBSSJ4', 'SSJR3', 'True God of Creation', 'God of Destruction','God of Creation', 'Super Broly', 'LSSJG', 'LSSJ4',
-
-               'SSJG4', 'LSSJ3', 'SSJ5', 'Mystic Kaioken', 'LSSJ Kaioken', 'SSJ2 Kaioken', 'SSJR3', 'SSJB3',
-
-               'God Of Destruction', 'God Of Creation', 'Jiren Ultra Instinct', 'Mastered Ultra Instinct', 'Godly SSJ2',
+local Forms = {'SSJBUI','Ultra Ego', 'LBSSJ4', 'SSJR3',"SSJB3", 'True God of Creation',
+     'SSJR3', 'SSJB3','God Of Destruction', 'God Of Creation', 'Jiren Ultra Instinct', 'Mastered Ultra Instinct', 'Godly SSJ2','Super Broly',
 
                'Ultra Instinct Omen', 'Evil SSJ', 'Blue Evolution', 'Dark Rose', 'Kefla SSJ2', 'SSJ Berserker',
 
