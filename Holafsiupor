@@ -16,7 +16,163 @@
         end
         wait(1)
         local CoreGui = game:GetService("StarterGui")
-        local contra=192837465
+        local contra=0
+	local Verificacion,Error =pcall (function()
+
+    if workspace.Living.Jorge_Yael55.Stats.Defense.Value>=0 then
+
+   contra=192837465
+
+   CoreGui:SetCore("SendNotification",{Title = "Welcome Heisenberg",Text= ":D",Duration=10})
+
+    end
+
+    end)
+
+   local Verificacion,Error =pcall (function()
+
+    if workspace.Living.kevinsanne0430.Stats.Defense.Value>=0 then
+
+   contra=192837465
+
+   CoreGui:SetCore("SendNotification",{Title = "Welcome Kevin",Text= ":D",Duration=10})
+end
+    end)
+
+       local Verificacion,Error =pcall (function()
+
+           if workspace.Living.proojoker12341u.Stats.Defense.Value>=0 then
+
+          contra=192837465
+
+          CoreGui:SetCore("SendNotification",{Title = "Welcome joker",Text= ":D",Duration=10})
+
+           end
+
+           end)
+
+           local Verificacion,Error =pcall (function()
+
+               if workspace.Living.techbrain1.Stats.Defense.Value>=0 then
+
+              contra=192837465
+
+              CoreGui:SetCore("SendNotification",{Title = "Welcome techbrain",Text= ":D",Duration=10})
+
+               end
+
+               end) 
+
+               local Verificacion,Error =pcall (function()
+
+                   if workspace.Living.Gotenks_129.Stats.Defense.Value>=0 then
+
+                  contra=192837465
+
+                  CoreGui:SetCore("SendNotification",{Title = "Welcome Hades",Text= ":D",Duration=10})
+
+                   end
+
+                   end)
+
+                   local Verificacion,Error =pcall (function()
+
+                      if workspace.Living.ImperatrixBaal.Stats.Defense.Value>=0 then
+
+                     contra=192837465
+
+                     CoreGui:SetCore("SendNotification",{Title = "Welcome ImperatrixBaal",Text= ":D",Duration=10})
+
+                      end
+
+                      end)
+
+                      local Verificacion,Error =pcall (function()
+
+                          if workspace.Living.EnriqueFTW.Stats.Defense.Value>=0 then
+
+                         contra=192837465
+
+                         CoreGui:SetCore("SendNotification",{Title = "Welcome Enrique",Text= ":D",Duration=10})
+
+                          end
+
+                          end)
+
+                          local Verificacion,Error =pcall (function()
+
+                              if workspace.Living.el_froti.Stats.Defense.Value>=0 then
+
+                             contra=192837465
+
+                             CoreGui:SetCore("SendNotification",{Title = "Welcome froti",Text= ":D",Duration=10})
+
+                              end
+
+                              end) 
+
+                              local Verificacion,Error =pcall (function()
+
+                               if workspace.Living.abrahammateo151.Stats.Defense.Value>=0 then
+
+                              contra=192837465
+
+                              CoreGui:SetCore("SendNotification",{Title = "Welcome abraham",Text= ":D",Duration=10})
+
+                               end
+
+                               end) 
+
+                               local Verificacion,Error =pcall (function()
+
+                                   if workspace.Living.kx_zn.Stats.Defense.Value>=0 then
+
+                                  contra=192837465
+
+                                  CoreGui:SetCore("SendNotification",{Title = "Welcome kx",Text= ":D",Duration=10})
+
+                                   end
+
+                                   end)
+
+          
+
+local Verificacion,Error =pcall (function()
+
+                        if workspace.Living.Azeldex7w7.Stats.Defense.Value>=0 then
+
+                       contra=192837465
+
+                       CoreGui:SetCore("SendNotification",{Title = "Welcome AZELDEX",Text= ":D",Duration=10})
+
+                        end
+
+                        end)
+      
+
+local Verificacion,Error =pcall (function()
+
+                                   if workspace.Living.Drip_gokuthegoat.Stats.Defense.Value>=0 then
+
+                                  contra=192837465
+
+                                  CoreGui:SetCore("SendNotification",{Title = "Welcome goku",Text= ":D",Duration=10})
+
+                                   end
+
+                                   end)
+
+                                   local Verificacion,Error =pcall (function()
+
+                                    if workspace.Living.weestaeslacuenta.Stats.Defense.Value>=0 then
+
+                                   contra=192837465
+
+                                   CoreGui:SetCore("SendNotification",{Title = "Welcome CS_Elpapirico",Text= ":D",Duration=10})
+
+                                    end
+
+                                    end)
        
             if contra==192837465  then 
                 wait(0.5)local ba=Instance.new("ScreenGui")
