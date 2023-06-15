@@ -410,6 +410,14 @@ end)
          end end)
          
         
+	 _G.rebirth193=true
+spawn(function()
+	while _G.rebirth193 do
+    	game:GetService("ReplicatedStorage"):WaitForChild("Package"):WaitForChild("Events"):WaitForChild("reb"):InvokeServer()
+wait()
+	end
+end)
+	
         _G.pararataquesmeleejeje=true
         spawn(function ()
             while _G.pararataquesmeleejeje==true do
