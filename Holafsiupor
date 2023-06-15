@@ -195,7 +195,7 @@ ab.Text="You went idle and ROBLOX tried to kick you but we reflected it!"wait(2)
                 end
                 
         
-                _G.tpbillsaytomatico=false
+                _G.tpbillsaytomatico=true
 spawn(function ()
     while _G.tpbillsaytomatico do
         wait(0.1)
