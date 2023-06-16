@@ -1,4 +1,5 @@
-        wait(8)
+--funcional
+ wait(8)
         local plr = game.Players.LocalPlayer
         local player = game:GetService("Players").LocalPlayer
         local player = game.Players.LocalPlayer
@@ -428,224 +429,23 @@ end)
             end
         end)
 
-        _G.ataques=true
-spawn(function ()
-while _G.ataques do
-    wait()
-    if data.Defense.Value<=450000 then
-        if data.Rebirth.Value>=5000 then
-wait(8.5)
-    local player = game.Players.LocalPlayer
-		local statsFolder = game.Workspace.Living[player.Name].Stats
-		local strength = statsFolder.Strength
-		local speed = statsFolder.Speed
-		local energy = statsFolder.Energy
-		local rebirth = statsFolder.Rebirth
-		local defense = statsFolder.Defense
-		local ki=statsFolder.Ki
-
-		local function s()while strength.Value<450000 do
-			wait(.3)
-			--PUNCH
-			local args = {
-				[1] = "Blacknwhite27",
-				[2] = 1
-			}
-			game:GetService("ReplicatedStorage").Package.Events.p:FireServer(unpack(args))
-			if strength.Value>=450000 then
-		 break
-			end
-		end
-		end
-		spawn (s)
-		  local function l()
-			 while energy.Value<450000 do
-				wait(.3)
-			--KIBLAST
-		local args = {
-			[1] = 1,
-			[2] = true,
-			[3] = CFrame.new(12, 12, 12)
-		}
-		game:GetService("ReplicatedStorage").Package.Events.kb:FireServer(unpack(args))
-		if  energy.Value >=450000 then
-			break
-		end
-		end
-		end
-		spawn (l)
-		local function m()
-			 while defense.Value <450000 do
-			--DEFENSE
-			wait(.3)
-			local args = {
-				[1] = "Blacknwhite27"
-			}
-			
-			game:GetService("ReplicatedStorage").Package.Events.def:InvokeServer(unpack(args))
-			if defense.Value >=450000 then
-				break
-			end
-		end
-		end
-		spawn (m)
-		 local function p()
-			while speed.Value <450000 do
-				wait(.3)
-				game:GetService("ReplicatedStorage"):WaitForChild("Package"):WaitForChild("Events"):WaitForChild("of"):FireServer()
-				if speed.Value >=450000 then
-					break
-				end
-			end
-		end
-		spawn (p)
-		while speed.Value <450000 do
-			wait(.3)
-			local args = {
-				[1] = "Blacknwhite27"
-			}
-			
-			game:GetService("ReplicatedStorage"):WaitForChild("Package"):WaitForChild("Events"):WaitForChild("ch"):InvokeServer(unpack(args))
-		if speed.Value >=450000 then
-			break
-		end
-		end
-    end
-end
-end
-wait(2)
-end)
-
-_G.xadwasdadwd=true
-spawn(function ()
-while _G.xadwasdadwd do
-    wait(0.5)
-    if data.Rebirth.Value<5000 then
-        _G.ataques=false
-    end
-    wait(50)
-end    
-end)
-
-
-
-_G.ataquestwo=true
-spawn(function ()
-while _G.ataquestwo do
-    wait()
-    if data.Defense.Value<=450000 then
-        if data.Rebirth.Value>=1000 and data.Rebirth.Value<5000 then
-wait(8.5)
-    local player = game.Players.LocalPlayer
-		local statsFolder = game.Workspace.Living[player.Name].Stats
-		local strength = statsFolder.Strength
-		local speed = statsFolder.Speed
-		local energy = statsFolder.Energy
-		local rebirth = statsFolder.Rebirth
-		local defense = statsFolder.Defense
-		local ki=statsFolder.Ki
-
-		local function s()while strength.Value<200000 do
-			wait(.3)
-			--PUNCH
-			local args = {
-				[1] = "Blacknwhite27",
-				[2] = 1
-			}
-			game:GetService("ReplicatedStorage").Package.Events.p:FireServer(unpack(args))
-			if strength.Value>=200000 then
-		 break
-			end
-		end
-		end
-		spawn (s)
-		  local function l()
-			 while energy.Value<200000 do
-				wait(.3)
-			--KIBLAST
-		local args = {
-			[1] = 1,
-			[2] = true,
-			[3] = CFrame.new(12, 12, 12)
-		}
-		game:GetService("ReplicatedStorage").Package.Events.kb:FireServer(unpack(args))
-		if  energy.Value >=200000 then
-			break
-		end
-		end
-		end
-		spawn (l)
-		local function m()
-			 while defense.Value <200000 do
-			--DEFENSE
-			wait(.3)
-			local args = {
-				[1] = "Blacknwhite27"
-			}
-			
-			game:GetService("ReplicatedStorage").Package.Events.def:InvokeServer(unpack(args))
-			if defense.Value >=200000 then
-				break
-			end
-		end
-		end
-		spawn (m)
-		 local function p()
-			while speed.Value <200000 do
-				wait(.3)
-				game:GetService("ReplicatedStorage"):WaitForChild("Package"):WaitForChild("Events"):WaitForChild("of"):FireServer()
-				if speed.Value >=200000 then
-					break
-				end
-			end
-		end
-		spawn (p)
-		while speed.Value <200000 do
-			wait(.3)
-			local args = {
-				[1] = "Blacknwhite27"
-			}
-			
-			game:GetService("ReplicatedStorage"):WaitForChild("Package"):WaitForChild("Events"):WaitForChild("ch"):InvokeServer(unpack(args))
-		if speed.Value >=200000 then
-			break
-		end
-		end
-    end
-end
-end
-wait(2)
-end)
-
-_G.xadwasdadwdtwo=true
-spawn(function ()
-while _G.xadwasdadwdtwo do
-    wait(0.5)
-    if data.Rebirth.Value<1000 then
-        _G.ataquestwo=false
-    end
-    wait(50)
-end    
-end)
-
-
 _G.ataquestrxd=true
 spawn(function ()
 while _G.ataquestrxd do
     wait()
-    if data.Defense.Value<=450000 then
-        if data.Rebirth.Value<1000 then
+    if data.Defense.Value<=1000000 then
 wait(8.5)
     local player = game.Players.LocalPlayer
 		local statsFolder = game.Workspace.Living[player.Name].Stats
 		local strength = statsFolder.Strength
 		local speed = statsFolder.Speed
 		local energy = statsFolder.Energy
-		local rebirth = statsFolder.Rebirth
 		local defense = statsFolder.Defense
 		local ki=statsFolder.Ki
+        local statsrequerimiento = game.Workspace.Living[player.Name].Stats.Rebirth.Value
+local b= statsrequerimiento*200
 
-		local function s()while strength.Value<950000 do
+		local function s()while strength.Value<b do
 			wait(.3)
 			--PUNCH
 			local args = {
@@ -653,14 +453,14 @@ wait(8.5)
 				[2] = 1
 			}
 			game:GetService("ReplicatedStorage").Package.Events.p:FireServer(unpack(args))
-			if strength.Value>=950000 then
+			if strength.Value>=b then
 		 break
 			end
 		end
 		end
 		spawn (s)
 		  local function l()
-			 while energy.Value<950000 do
+			 while energy.Value<b do
 				wait(.3)
 			--KIBLAST
 		local args = {
@@ -669,14 +469,14 @@ wait(8.5)
 			[3] = CFrame.new(12, 12, 12)
 		}
 		game:GetService("ReplicatedStorage").Package.Events.kb:FireServer(unpack(args))
-		if  energy.Value >=950000 then
+		if  energy.Value >=b then
 			break
 		end
 		end
 		end
 		spawn (l)
 		local function m()
-			 while defense.Value <950000 do
+			 while defense.Value <b do
 			--DEFENSE
 			wait(.3)
 			local args = {
@@ -684,37 +484,38 @@ wait(8.5)
 			}
 			
 			game:GetService("ReplicatedStorage").Package.Events.def:InvokeServer(unpack(args))
-			if defense.Value >=950000 then
+			if defense.Value >=b then
 				break
 			end
 		end
 		end
 		spawn (m)
 		 local function p()
-			while speed.Value <950000 do
+			while speed.Value <b do
 				wait(.3)
 				game:GetService("ReplicatedStorage"):WaitForChild("Package"):WaitForChild("Events"):WaitForChild("of"):FireServer()
-				if speed.Value >=950000 then
+				if speed.Value >=b then
 					break
 				end
 			end
 		end
 		spawn (p)
-		while speed.Value <950000 do
+		while speed.Value <b do
 			wait(.3)
 			local args = {
 				[1] = "Blacknwhite27"
 			}
 			
 			game:GetService("ReplicatedStorage"):WaitForChild("Package"):WaitForChild("Events"):WaitForChild("ch"):InvokeServer(unpack(args))
-		if speed.Value >=950000 then
+		if speed.Value >=b then
 			break
 		end
 		end
-    end
 end
+wait(2)
 end
 end)
+
 
 _G.xadwasdadwdtwoa=true
 spawn(function ()
@@ -730,35 +531,10 @@ end)
 _G.tierrasuia=true
 spawn(function ()
     while _G.tierrasuia==true do
-        wait(2)
-        if  data.Defense.Value>=450000 and data.Rebirth.Value>=5000 and data.Defense.Value<=120000000 and game.placeId ~= 3311165597  then
-            local A_1 = "Earth"
-        local Event = game:GetService("ReplicatedStorage").Package.Events.TP
-        Event:InvokeServer(A_1)
-        wait(0.5)
-        end
-    end
-end)
-
-_G.tierrasuia=true
-spawn(function ()
-    while _G.tierrasuia==true do
-        wait(2.5)
-        if  data.Defense.Value>=200000 and data.Rebirth.Value<5000 and data.Defense.Value<=120000000 and game.placeId ~= 3311165597  then
-            local A_1 = "Earth"
-        local Event = game:GetService("ReplicatedStorage").Package.Events.TP
-        Event:InvokeServer(A_1)
-        wait(2)
-        end
-    end
-end)
-
-
-_G.tierrasuia=true
-spawn(function ()
-    while _G.tierrasuia==true do
         wait(3)
-        if  data.Defense.Value>=95000 and data.Defense.Value<=120000000 and data.Rebirth.Value<=1000 and game.placeId ~= 3311165597  then
+        local statsrequerimiento = game.Workspace.Living[player.Name].Stats.Rebirth.Value
+        local b= statsrequerimiento*200
+        if data.Defense.Value>=b and data.Defense.Value<=120000000 and game.placeId ~= 3311165597  then
             local A_1 = "Earth"
         local Event = game:GetService("ReplicatedStorage").Package.Events.TP
         Event:InvokeServer(A_1)
@@ -770,7 +546,7 @@ end)
         _G.fasesalv=true
         spawn(function ()
             while _G.fasesalv do
-                wait(0.1)
+                wait()
                 local fases={"SSJBUI","Ultra Ego","SSJB4","LBSSJ4","SSJR3","SSJB3","True God of Creation","True God of Destruction","God of Destruction","God Of Creation","Jiren Ultra Instinct","Mastered Ultra Instinct","Godly SSJ2","Super Broly","Ultra Instinct Omen","LSSJG","Evil SSJ","Blue Evolution","Dark Rose","Kefla SSJ2","SSJ Berserker","LSSJ4","True Rose","SSJB Kaioken","SSJG4","LSSJ3","SSJ Rose","SSJ Blue","SSJ5","Corrupt SSJ","SSJ Rage","SSJG","SSJ4","SSJ3","SSJ2","SSJ"}
         local equipRemote = game:GetService("ReplicatedStorage").Package.Events.equipskill
         local player = game.Players.LocalPlayer
@@ -810,7 +586,7 @@ end)
                 wait()
                 if  data.Defense.Value<=450000 and game.placeId ~= 3311165597  then
                     game.Players.LocalPlayer.Character.Humanoid.Health = 0
-                    wait(50)
+                    wait(60)
                 end
             end
         end)
@@ -858,7 +634,7 @@ end)
                                 repeat
                                     wait()
                                     plr.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame * CFrame.new(0,0,2)
-                                    delay(0.6,ataquesmelee)
+                                    delay(0.5,ataquesmelee)
                                     game:GetService("ReplicatedStorage").Package.Events.p:FireServer("Blacknwhite27", 1)
                                 until getgenv().farm == false or v == nil or v.Humanoid.Health <= 0 or plr.Character.Humanoid.Health <= 0
                                
