@@ -355,7 +355,7 @@ ab.Text="You went idle and ROBLOX tried to kick you but we reflected it!"wait(2)
                 _G.tpbillsaytomatico=true
 spawn(function ()
     while _G.tpbillsaytomatico do
-        wait(0.1)
+        wait()
         local plr = game.Players.LocalPlayer
 local player = game:GetService("Players").LocalPlayer
 local player = game.Players.LocalPlayer
@@ -365,7 +365,7 @@ local data = game.ReplicatedStorage.Datas[player.UserId]
         local A_1 = "Vills Planet"
         local Event = game:GetService("ReplicatedStorage").Package.Events.TP
         Event:InvokeServer(A_1)
-        wait(0.5)
+        wait(5)
         end
     end
 end)
@@ -426,6 +426,7 @@ end)
                 if data.Strength.Value>=30000000 then 
                 _G.ataquesmeleejeje=false
                 end
+                wait(5)
             end
         end)
 
