@@ -516,18 +516,6 @@ wait(2)
 end
 end)
 
-
-_G.xadwasdadwdtwoa=true
-spawn(function ()
-while _G.xadwasdadwdtwoa do
-    wait(0.5)
-    if data.Rebirth.Value>1000 then
-        _G.ataquestrxd=false
-    end
-    wait(50)
-end    
-end)
-
 _G.tierrasuia=true
 spawn(function ()
     while _G.tierrasuia==true do
