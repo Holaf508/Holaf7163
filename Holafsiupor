@@ -224,7 +224,6 @@ local function ataquesmelee()
 		local energy = statsFolder.Energy
 		local defense = statsFolder.Defense
 		local ki=statsFolder.Ki
-        if data.Strength.Value>=1000000 then
             wait()
     game.ReplicatedStorage.Package.Events.mel:InvokeServer("Spirit Breaking Cannon", "Blacknwhite27")
     game.ReplicatedStorage.Package.Events.mel:InvokeServer("High Power Rush", "Blacknwhite27")
@@ -234,8 +233,7 @@ local function ataquesmelee()
     game.ReplicatedStorage.Package.Events.mel:InvokeServer("Mach Kick", "Blacknwhite27")
     game.ReplicatedStorage.Package.Events.mel:InvokeServer("Wolf Fang Fist", "Blacknwhite27")
     game.ReplicatedStorage.Package.Events.mel:InvokeServer("Meteor Crash", "Blacknwhite27")
-    wait(1)
-end
+wait(1)
 end
 
         local function transform()
@@ -261,14 +259,8 @@ end
         end)
         
         while true and wait() do
-            if (stats.Strength.Value > 0 and stats.Defense.Value > 0 and stats.Energy.Value > 0 and stats.Speed.Value >
-                  0) then
-                transform()
-        
-            end
             coroutine.resume(coroutine.create(function()
                 game:GetService("ReplicatedStorage").Package.Events.reb:InvokeServer()
-        
             end))
             if (not player.PlayerGui.Main.MainFrame.Frames.Quest.Nop.Visible) then
                 transform()
