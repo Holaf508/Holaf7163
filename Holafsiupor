@@ -345,7 +345,7 @@ game.Players.LocalPlayer.Character.Humanoid.Health = 0
             {"Vills (50%)", minimum = 400000000, maximum = 900000000 --[[13000000]], Quest = workspace.Others.NPCs["Vills (50%)"]},
             {"Vis (20%)", minimum = 900000000, maximum = 1200000000 --[[13000000]], Quest = workspace.Others.NPCs["Vis (20%)"]},
             {"Vegetable (LBSSJ4)", minimum = 1200000000, maximum = 1800000000 --[[13000000]], Quest = workspace.Others.NPCs["Vegetable (LBSSJ4)"]},
-            {"Wukong (SSJBUI)", minimum = 1800000000, maximum = 2800000000 --[[13000000]], Quest = workspace.Others.NPCs["Wukong (SSJBUI)"]},
+            {"Wukong (SSJBUI)", minimum = 1800000000, maximum = 2800000000 --[[13000000]], Quest = workspace.Others.NPCs["Wukong (LBSSJ4)"]},
             {"Vekuta (LBSSJ4)", minimum = 2800000000, maximum = 3800000000 --[[13000000]], Quest = workspace.Others.NPCs["Vekuta (LBSSJ4)"]},     
             {"Wukong Rose", minimum = 3800000000, maximum = 4800000000 --[[13000000]], Quest = workspace.Others.NPCs["Wukong Rose"]},
             {"Vekuta (SSJBUI)", minimum = 4800000000, maximum = 4800000000000000000000000000000000000 --[[13000000]], Quest = workspace.Others.NPCs["Vekuta (SSJBUI)"]},
@@ -472,7 +472,7 @@ game.Players.LocalPlayer.Character.Humanoid.Health = 0
                                         end 
                                         if game.Players.LocalPlayer.Character.Humanoid.Health > 0 then
                                             repeat 
-                                                for i = 1,1 do
+                                                for i = 1,2 do
                                                     if rebirthed then npctofarmR = NPCS[1][1] v = workspace.Living:FindFirstChild(NPCS[1][1]) end 
                                                     coroutine.resume(coroutine.create(function()
                                                         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame
@@ -480,7 +480,7 @@ game.Players.LocalPlayer.Character.Humanoid.Health = 0
                                                     delay(0.5,ataquesjefe)
                                                     local Event = game:GetService("ReplicatedStorage").Package.Events.p
                                                     Event:FireServer("Blacknwhite27",i) wait() end until v.Humanoid.Health == 0 or not _G.rebirthgrinder or rebirthed
-                                            wait(8.8)
+                                            wait(8.5)
                                             donee = true
                                         end
                                     end 
