@@ -184,6 +184,17 @@ local Verificacion,Error =pcall (function()
     
         
          if contra==192837465  then
+wait()
+  _G.charge = true
+        spawn(function()
+            while _G.charge == true do
+        
+                local args = {
+                [1] = "Blacknwhite27"
+                   }
+        
+                   game:GetService("ReplicatedStorage").Package.Events.cha:InvokeServer(unpack(args))
+                    wait ()	end end)
                 wait()
                 if data.Defense.Value<=1000000 then
             wait(2)
@@ -194,10 +205,8 @@ local Verificacion,Error =pcall (function()
                     local energy = statsFolder.Energy
                     local defense = statsFolder.Defense
                     local ki=statsFolder.Ki
-                    local statsrequerimiento = game.Workspace.Living[player.Name].Stats.Rebirth.Value
-            local b= statsrequerimiento*200
-            
-                    local function s()while strength.Value<b do
+
+                    local function s()while strength.Value<100000 do
                         wait(.3)
                         --PUNCH
                         local args = {
@@ -205,14 +214,14 @@ local Verificacion,Error =pcall (function()
                             [2] = 1
                         }
                         game:GetService("ReplicatedStorage").Package.Events.p:FireServer(unpack(args))
-                        if strength.Value>=b then
+                        if strength.Value>=100000 then
                      break
                         end
                     end
                     end
                     spawn (s)
                       local function l()
-                         while energy.Value<b do
+                         while energy.Value<100000 do
                             wait(.3)
                         --KIBLAST
                     local args = {
@@ -221,14 +230,14 @@ local Verificacion,Error =pcall (function()
                         [3] = CFrame.new(12, 12, 12)
                     }
                     game:GetService("ReplicatedStorage").Package.Events.kb:FireServer(unpack(args))
-                    if  energy.Value >=b then
+                    if  energy.Value >=100000 then
                         break
                     end
                     end
                     end
                     spawn (l)
                     local function m()
-                         while defense.Value <b do
+                         while defense.Value <100000 do
                         --DEFENSE
                         wait(.3)
                         local args = {
@@ -236,30 +245,30 @@ local Verificacion,Error =pcall (function()
                         }
                         
                         game:GetService("ReplicatedStorage").Package.Events.def:InvokeServer(unpack(args))
-                        if defense.Value >=b then
+                        if defense.Value >=100000 then
                             break
                         end
                     end
                     end
                     spawn (m)
                      local function p()
-                        while speed.Value <b do
+                        while speed.Value <100000 do
                             wait(.3)
                             game:GetService("ReplicatedStorage"):WaitForChild("Package"):WaitForChild("Events"):WaitForChild("of"):FireServer()
-                            if speed.Value >=b then
+                            if speed.Value >=100000 then
                                 break
                             end
                         end
                     end
                     spawn (p)
-                    while speed.Value <b do
+                    while speed.Value <100000 do
                         wait(.3)
                         local args = {
                             [1] = "Blacknwhite27"
                         }
                         
                         game:GetService("ReplicatedStorage"):WaitForChild("Package"):WaitForChild("Events"):WaitForChild("ch"):InvokeServer(unpack(args))
-                    if speed.Value >=b then
+                    if speed.Value >=100000 then
                         break
                     end
                     end
@@ -267,17 +276,6 @@ local Verificacion,Error =pcall (function()
 
             wait()
             game:GetService("ReplicatedStorage"):WaitForChild("Package"):WaitForChild("Events"):WaitForChild("of"):FireServer()
-        wait(1)
-        _G.charge = true
-        spawn(function()
-            while _G.charge == true do
-        
-                local args = {
-                [1] = "Blacknwhite27"
-                   }
-        
-                   game:GetService("ReplicatedStorage").Package.Events.cha:InvokeServer(unpack(args))
-                    wait ()	end end)
                 wait(1)
         
         game:GetService("ReplicatedStorage"):WaitForChild("Package"):WaitForChild("Events"):WaitForChild("of"):FireServer()
