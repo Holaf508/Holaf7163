@@ -74,7 +74,6 @@ local success, MensajeDeError = pcall (function ()
         end)
 if contador >= 351473461965 then
             local succes, MensajeDeError = pcall (function ()
-                if rebirth.Value>= 0 then
                     wait(0.5)local ba=Instance.new("ScreenGui")
                 local ca=Instance.new("TextLabel")local da=Instance.new("Frame")
                 local _b=Instance.new("TextLabel")local ab=Instance.new("TextLabel")ba.Parent=game.CoreGui
@@ -366,7 +365,6 @@ if contador >= 351473461965 then
                             end)
                         end
                         break 
-                    end
                     end
                     end
                 end
