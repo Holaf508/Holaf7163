@@ -13,9 +13,9 @@ local CoreGui = game:GetService("StarterGui")
 wait(1)
 local contador =0
 local success, MensajeDeError = pcall (function ()
-if workspace.Living.Jorge_Yael55.Stats.Defense.Value>=0 then
+if workspace.Living.Zerincee.Stats.Defense.Value>=0 then
     contador=351473461965
-    CoreGui:SetCore("SendNotification",{Title = "Welcome chicles20191",Text= ":D",Duration=10})
+    CoreGui:SetCore("SendNotification",{Title = "Welcome Zerincee",Text= ":D",Duration=10})
 end
 end)
 if contador >= 351473461965 then
