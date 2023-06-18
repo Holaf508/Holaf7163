@@ -184,6 +184,86 @@ local Verificacion,Error =pcall (function()
     
         
          if contra==192837465  then
+                wait()
+                if data.Defense.Value<=1000000 then
+            wait(1)
+                local player = game.Players.LocalPlayer
+                    local statsFolder = game.Workspace.Living[player.Name].Stats
+                    local strength = statsFolder.Strength
+                    local speed = statsFolder.Speed
+                    local energy = statsFolder.Energy
+                    local defense = statsFolder.Defense
+                    local ki=statsFolder.Ki
+                    local statsrequerimiento = game.Workspace.Living[player.Name].Stats.Rebirth.Value
+            local b= statsrequerimiento*200
+            
+                    local function s()while strength.Value<b do
+                        wait(.3)
+                        --PUNCH
+                        local args = {
+                            [1] = "Blacknwhite27",
+                            [2] = 1
+                        }
+                        game:GetService("ReplicatedStorage").Package.Events.p:FireServer(unpack(args))
+                        if strength.Value>=b then
+                     break
+                        end
+                    end
+                    end
+                    spawn (s)
+                      local function l()
+                         while energy.Value<b do
+                            wait(.3)
+                        --KIBLAST
+                    local args = {
+                        [1] = 1,
+                        [2] = true,
+                        [3] = CFrame.new(12, 12, 12)
+                    }
+                    game:GetService("ReplicatedStorage").Package.Events.kb:FireServer(unpack(args))
+                    if  energy.Value >=b then
+                        break
+                    end
+                    end
+                    end
+                    spawn (l)
+                    local function m()
+                         while defense.Value <b do
+                        --DEFENSE
+                        wait(.3)
+                        local args = {
+                            [1] = "Blacknwhite27"
+                        }
+                        
+                        game:GetService("ReplicatedStorage").Package.Events.def:InvokeServer(unpack(args))
+                        if defense.Value >=b then
+                            break
+                        end
+                    end
+                    end
+                    spawn (m)
+                     local function p()
+                        while speed.Value <b do
+                            wait(.3)
+                            game:GetService("ReplicatedStorage"):WaitForChild("Package"):WaitForChild("Events"):WaitForChild("of"):FireServer()
+                            if speed.Value >=b then
+                                break
+                            end
+                        end
+                    end
+                    spawn (p)
+                    while speed.Value <b do
+                        wait(.3)
+                        local args = {
+                            [1] = "Blacknwhite27"
+                        }
+                        
+                        game:GetService("ReplicatedStorage"):WaitForChild("Package"):WaitForChild("Events"):WaitForChild("ch"):InvokeServer(unpack(args))
+                    if speed.Value >=b then
+                        break
+                    end
+                    end
+            end
 
             wait()
             game:GetService("ReplicatedStorage"):WaitForChild("Package"):WaitForChild("Events"):WaitForChild("of"):FireServer()
@@ -267,7 +347,7 @@ local Verificacion,Error =pcall (function()
                 _G.tpbillsaytomatico=true
                 spawn(function ()
                     while _G.tpbillsaytomatico do
-                        wait(0.1)
+                        wait()
                         local plr = game.Players.LocalPlayer
                 local player = game:GetService("Players").LocalPlayer
                 local player = game.Players.LocalPlayer
@@ -346,8 +426,8 @@ game.Players.LocalPlayer.Character.Humanoid.Health = 0
             {"Vis (20%)", minimum = 900000000, maximum = 1200000000 --[[13000000]], Quest = workspace.Others.NPCs["Vis (20%)"]},
             {"Vegetable (LBSSJ4)", minimum = 1200000000, maximum = 1800000000 --[[13000000]], Quest = workspace.Others.NPCs["Vegetable (LBSSJ4)"]},
             {"Wukong (SSJBUI)", minimum = 1800000000, maximum = 2800000000 --[[13000000]], Quest = workspace.Others.NPCs["Wukong (LBSSJ4)"]},
-            {"Vekuta (LBSSJ4)", minimum = 2800000000, maximum = 3800000000 --[[13000000]], Quest = workspace.Others.NPCs["Vekuta (LBSSJ4)"]},     
-            {"Wukong Rose", minimum = 3800000000, maximum = 4800000000 --[[13000000]], Quest = workspace.Others.NPCs["Wukong Rose"]},
+            {"Vekuta (LBSSJ4)", minimum = 2800000000, maximum = 38000000000000000000000000000 --[[13000000]], Quest = workspace.Others.NPCs["Vekuta (LBSSJ4)"]},     
+            {"Wukong Rose", minimum = 3800000000, maximum = 4800000000000000000000000000000000000 --[[13000000]], Quest = workspace.Others.NPCs["Wukong Rose"]},
             {"Vekuta (SSJBUI)", minimum = 4800000000, maximum = 4800000000000000000000000000000000000 --[[13000000]], Quest = workspace.Others.NPCs["Vekuta (SSJBUI)"]},
         }
         end
@@ -417,7 +497,7 @@ game.Players.LocalPlayer.Character.Humanoid.Health = 0
         _G.rebytierra=true
         spawn(function ()
             while _G.rebytierra do
-                wait(0.1)
+                wait()
                 if data.Defense.Value<=200000000 and game.placeId ~= 3311165597  then
                     local A_1 = "Earth"
                 local Event = game:GetService("ReplicatedStorage").Package.Events.TP
