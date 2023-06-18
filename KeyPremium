@@ -53,73 +53,7 @@ local Event = game:GetService("ReplicatedStorage").Package.Events.ta
 Event:InvokeServer()
 local CoreGui = game:GetService("StarterGui")
 wait(1)
-local contador =0
-local success, MensajeDeError = pcall (function ()
-if workspace.Living.Zerincee.Stats.Defense.Value>=0 then
-    contador=351473461965
-    CoreGui:SetCore("SendNotification",{Title = "Welcome Zerincee",Text= ":D",Duration=10})
-end
-end)
-local success, MensajeDeError = pcall (function ()
-    if workspace.Living.kx_zn.Stats.Defense.Value>=0 then
-        contador=351473461965
-        CoreGui:SetCore("SendNotification",{Title = "Welcome xk",Text= ":D",Duration=10})
-    end
-    end)
-local success, MensajeDeError = pcall (function ()
-    if workspace.Living.proojoker12341u.Stats.Defense.Value>=0 then
-        contador=351473461965
-        CoreGui:SetCore("SendNotification",{Title = "Welcome joker",Text= ":D",Duration=10})
-    end
-    end)
-local success, MensajeDeError = pcall (function ()
-        if workspace.Living.proojoker12341u.Stats.Defense.Value>=0 then
-            contador=351473461965
-            CoreGui:SetCore("SendNotification",{Title = "Welcome projoker",Text= ":D",Duration=10})
-        end
-        end)
-        local success, MensajeDeError = pcall (function ()
-            if workspace.Living.ImperatrixBaal.Stats.Defense.Value>=0 then
-                contador=351473461965
-                CoreGui:SetCore("SendNotification",{Title = "Welcome Raiden",Text= "Hades y tu son GOD!",Duration=10})
-            end
-            end)
-    local success, MensajeDeError = pcall (function ()
-        if workspace.Living.Gotenks_129.Stats.Defense.Value>=0 then
-            contador=351473461965
-            CoreGui:SetCore("SendNotification",{Title = "Welcome Gotenks",Text= ":D",Duration=10})
-        end
-        end)
-        local success, MensajeDeError = pcall (function ()
-            if workspace.Living.abrahammateo151.Stats.Defense.Value>=0 then
-                contador=351473461965
-                CoreGui:SetCore("SendNotification",{Title = "Welcome abraham",Text= ":D",Duration=10})
-            end
-            end)
-local success, MensajeDeError = pcall (function ()
-    if workspace.Living.EnriqueFTW.Stats.Defense.Value>=0 then
-        contador=351473461965
-        CoreGui:SetCore("SendNotification",{Title = "Welcome EnriqueFTW",Text= ":D",Duration=10})
-    end
-    end)
-local success, MensajeDeError = pcall (function ()
-    if workspace.Living.techbrain1.Stats.Defense.Value>=0 then
-        contador=351473461965
-        CoreGui:SetCore("SendNotification",{Title = "Welcome techbrain1",Text= ":D",Duration=10})
-    end
-    end)
-local success, MensajeDeError = pcall (function ()
-    if workspace.Living.Jorge_Yael55.Stats.Defense.Value>=0 then
-        contador=351473461965
-        CoreGui:SetCore("SendNotification",{Title = "Welcome Jorge_Yael55",Text= ":D",Duration=10})
-    end
-    end)
-    local success, MensajeDeError = pcall (function ()
-        if workspace.Living.el_froti.Stats.Defense.Value>=0 then
-            contador=351473461965
-            CoreGui:SetCore("SendNotification",{Title = "Welcome froti",Text= ":D",Duration=10})
-        end
-        end)
+local contador =351473461965
 if contador >= 351473461965 then
             local succes, MensajeDeError = pcall (function ()
                     wait(0.5)local ba=Instance.new("ScreenGui")
