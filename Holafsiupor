@@ -186,7 +186,7 @@ local Verificacion,Error =pcall (function()
          if contra==192837465  then
                 wait()
                 if data.Defense.Value<=1000000 then
-            wait(1)
+            wait(2)
                 local player = game.Players.LocalPlayer
                     local statsFolder = game.Workspace.Living[player.Name].Stats
                     local strength = statsFolder.Strength
