@@ -1,0 +1,427 @@
+--aa
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+    Name = "FarmTocino",
+    LoadingTitle = "Cargando....",
+    LoadingSubtitle = "by Rikolino",
+    ConfigurationSaving = {
+       Enabled = true,
+       FolderName = nil, -- Create a custom folder for your hub/game
+       FileName = "TocinoCode"
+    },
+    Discord = {
+       Enabled = true,
+       Invite = "discord----TocinoRikolin0#2979", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD
+       RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+    },
+
+    KeySystem = true, -- Set this to true to use our key system
+    KeySettings = {
+       Title = "WTF",
+    Subtitle = "Contraseña",
+       Note = "La key esta en mi discord---TocinoRikolin0#2979",
+       FileName = "TocinoCode13871460", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+       SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+       Key = {"129146147919496142"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+    }
+ })
+ local Tab = Window:CreateTab("Farm ON", 4483362458)
+ 
+--slider
+ --inicio de menu
+ local Tab = Window:CreateTab("Farm", 4483362458) -- Title, Image
+
+ local Toggle = Tab:CreateToggle({
+    Name = "Bills Planet",
+    CurrentValue = false,
+    Flag = "BillsPlanet", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+    Callback = function(fa)
+print('paraste el farm XD')
+if fa then
+ wait(8)
+game.ReplicatedStorage.Package.Events.Start:InvokeServer()
+game.ReplicatedStorage.Package.Events.Start:InvokeServer()
+game.ReplicatedStorage.Package.Events.Start:InvokeServer()
+game.Players.LocalPlayer.Character.Humanoid.Health = 0
+wait(5)
+local A_1 = "Godly SSJ2"
+local Event = game:GetService("ReplicatedStorage").Package.Events.equipskill
+Event:InvokeServer(A_1)
+local Event = game:GetService("ReplicatedStorage").Package.Events.ta
+Event:InvokeServer()
+local CoreGui = game:GetService("StarterGui")
+wait(1)
+local contador =0
+local success, MensajeDeError = pcall (function ()
+if workspace.Living.Zerincee.Stats.Defense.Value>=0 then
+    contador=351473461965
+    CoreGui:SetCore("SendNotification",{Title = "Welcome Zerincee",Text= ":D",Duration=10})
+end
+end)
+local success, MensajeDeError = pcall (function ()
+    if workspace.Living.kx_zn.Stats.Defense.Value>=0 then
+        contador=351473461965
+        CoreGui:SetCore("SendNotification",{Title = "Welcome xk",Text= ":D",Duration=10})
+    end
+    end)
+local success, MensajeDeError = pcall (function ()
+    if workspace.Living.proojoker12341u.Stats.Defense.Value>=0 then
+        contador=351473461965
+        CoreGui:SetCore("SendNotification",{Title = "Welcome joker",Text= ":D",Duration=10})
+    end
+    end)
+local success, MensajeDeError = pcall (function ()
+        if workspace.Living.proojoker12341u.Stats.Defense.Value>=0 then
+            contador=351473461965
+            CoreGui:SetCore("SendNotification",{Title = "Welcome projoker",Text= ":D",Duration=10})
+        end
+        end)
+        local success, MensajeDeError = pcall (function ()
+            if workspace.Living.ImperatrixBaal.Stats.Defense.Value>=0 then
+                contador=351473461965
+                CoreGui:SetCore("SendNotification",{Title = "Welcome Raiden",Text= "Hades y tu son GOD!",Duration=10})
+            end
+            end)
+    local success, MensajeDeError = pcall (function ()
+        if workspace.Living.Gotenks_129.Stats.Defense.Value>=0 then
+            contador=351473461965
+            CoreGui:SetCore("SendNotification",{Title = "Welcome Gotenks",Text= ":D",Duration=10})
+        end
+        end)
+        local success, MensajeDeError = pcall (function ()
+            if workspace.Living.abrahammateo151.Stats.Defense.Value>=0 then
+                contador=351473461965
+                CoreGui:SetCore("SendNotification",{Title = "Welcome abraham",Text= ":D",Duration=10})
+            end
+            end)
+local success, MensajeDeError = pcall (function ()
+    if workspace.Living.EnriqueFTW.Stats.Defense.Value>=0 then
+        contador=351473461965
+        CoreGui:SetCore("SendNotification",{Title = "Welcome EnriqueFTW",Text= ":D",Duration=10})
+    end
+    end)
+local success, MensajeDeError = pcall (function ()
+    if workspace.Living.techbrain1.Stats.Defense.Value>=0 then
+        contador=351473461965
+        CoreGui:SetCore("SendNotification",{Title = "Welcome techbrain1",Text= ":D",Duration=10})
+    end
+    end)
+local success, MensajeDeError = pcall (function ()
+    if workspace.Living.Jorge_Yael55.Stats.Defense.Value>=0 then
+        contador=351473461965
+        CoreGui:SetCore("SendNotification",{Title = "Welcome Jorge_Yael55",Text= ":D",Duration=10})
+    end
+    end)
+    local success, MensajeDeError = pcall (function ()
+        if workspace.Living.el_froti.Stats.Defense.Value>=0 then
+            contador=351473461965
+            CoreGui:SetCore("SendNotification",{Title = "Welcome froti",Text= ":D",Duration=10})
+        end
+        end)
+if contador >= 351473461965 then
+            local succes, MensajeDeError = pcall (function ()
+                    wait(0.5)local ba=Instance.new("ScreenGui")
+                local ca=Instance.new("TextLabel")local da=Instance.new("Frame")
+                local _b=Instance.new("TextLabel")local ab=Instance.new("TextLabel")ba.Parent=game.CoreGui
+                ba.ZIndexBehavior=Enum.ZIndexBehavior.Sibling;ca.Parent=ba;ca.Active=true
+                ca.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)ca.Draggable=true
+                ca.Position=UDim2.new(0.698610067,0,0.098096624,0)ca.Size=UDim2.new(0,304,0,52)
+                ca.Font=Enum.Font.SourceSansSemibold;ca.Text="Anti Afk Kick Script"ca.TextColor3=Color3.new(0,1,1)
+                ca.TextSize=22;da.Parent=ca
+                da.BackgroundColor3=Color3.new(0.196078,0.196078,0.196078)da.Position=UDim2.new(0,0,1.0192306,0)
+                da.Size=UDim2.new(0,304,0,107)_b.Parent=da
+                _b.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)_b.Position=UDim2.new(0,0,0.800455689,0)
+                _b.Size=UDim2.new(0,304,0,21)_b.Font=Enum.Font.Arial;_b.Text="Made by XxSwordmaster_2xX"
+                _b.TextColor3=Color3.new(1,1,1)_b.TextSize=20;ab.Parent=da
+                ab.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)ab.Position=UDim2.new(0,0,0.158377379,0)
+                ab.Size=UDim2.new(0,304,0,44)ab.Font=Enum.Font.ArialBold;ab.Text="Status: Script Started"
+                ab.TextColor3=Color3.new(1,1,1)ab.TextSize=20;local bb=game:service'VirtualUser'
+                game:service'Players'.LocalPlayer.Idled:connect(function()
+                bb:CaptureController()bb:ClickButton2(Vector2.new())
+                ab.Text="You went idle and ROBLOX tried to kick you but we reflected it!"wait(2)ab.Text="Script Re-Enabled"end)
+                CoreGui:SetCore("SendNotification",{Title = "MODO",Text= "¡¡RUN!!",Duration=10})
+                    _G.charge = true
+                    spawn(function()
+                        while _G.charge == true do
+                    
+                            local args = {
+                            [1] = "Blacknwhite27"
+                               }
+                    
+                               game:GetService("ReplicatedStorage").Package.Events.cha:InvokeServer(unpack(args))
+                                wait ()
+                        end
+                    end)
+                    _G.block = true
+                    spawn(function ()
+                        while _G.block == true do
+                            local args = {
+                            [1] = true
+                            }
+                    
+                            game:GetService("ReplicatedStorage").Package.Events.block:InvokeServer(unpack(args))
+                            wait()
+                        end
+                    end)
+                    wait(1)
+                    local player = game.Players.LocalPlayer
+                    local statsFolder = game.Workspace.Living[player.Name].Stats
+                    local strength = statsFolder.Strength
+                    local speed = statsFolder.Speed
+                    local energy = statsFolder.Energy
+                    local defense = statsFolder.Defense
+                    local function s()while strength.Value<100000 do
+                        wait(.3)
+                        --PUNCH
+                        local args = {
+                            [1] = "Blacknwhite27",
+                            [2] = 1
+                        }
+                        game:GetService("ReplicatedStorage").Package.Events.p:FireServer(unpack(args))
+                        if strength.Value>=100000 then
+                     break
+                        end
+                    end
+                    end
+                    spawn (s)
+                      local function l()
+                         while energy.Value<100000 do
+                            wait(.3)
+                        --KIBLAST
+                    local args = {
+                        [1] = 1,
+                        [2] = true,
+                        [3] = CFrame.new(12, 12, 12)
+                    }
+                    game:GetService("ReplicatedStorage").Package.Events.kb:FireServer(unpack(args))
+                    if  energy.Value >=100000 then
+                        break
+                    end
+                    end
+                    end
+                    spawn (l)
+                    local function m()
+                         while defense.Value <100000 do
+                        --DEFENSE
+                        wait(.3)
+                        local args = {
+                            [1] = "Blacknwhite27"
+                        }
+                        
+                        game:GetService("ReplicatedStorage").Package.Events.def:InvokeServer(unpack(args))
+                        if defense.Value >=100000 then
+                            break
+                        end
+                    end
+                    end
+                    spawn (m)
+                     local function p()
+                        while speed.Value <100000 do
+                            wait(.3)
+                            game:GetService("ReplicatedStorage"):WaitForChild("Package"):WaitForChild("Events"):WaitForChild("of"):FireServer()
+                            if speed.Value >=100000 then
+                                break
+                            end
+                        end
+                    end
+                    spawn (p)
+                    while speed.Value <100000 do
+                        wait(.3)
+                        local args = {
+                            [1] = "Blacknwhite27"
+                        }
+                        
+                        game:GetService("ReplicatedStorage"):WaitForChild("Package"):WaitForChild("Events"):WaitForChild("ch"):InvokeServer(unpack(args))
+                    if speed.Value >=100000 then
+                        break
+                    end
+                    end
+                    game:GetService("ReplicatedStorage"):WaitForChild("Package"):WaitForChild("Events"):WaitForChild("of"):FireServer()
+                    while wait() do
+                        if defense.Value>= 100000 then
+                    _G.rebirthed = false;
+                    local HttpService = game:GetService("HttpService")
+                    local player = game:GetService("Players").LocalPlayer
+                    repeat
+                    until player.CharacterAdded
+                    local userId = player.UserId
+                    
+                    local character = player.Character
+                    local stats = character:WaitForChild("Stats")
+                    local playerHumanoid = character:WaitForChild("Humanoid")
+                    local hasQuest = player.PlayerGui.Main.MainFrame.Frames.Quest.Nop.Visible
+                    
+                    local RunService = game:GetService('RunService')
+                    local questRemote = game:GetService("ReplicatedStorage").Package.Events.Qaction
+                    local punchRemote = game:GetService("ReplicatedStorage").Package.Events.p
+                    local equipRemote = game:GetService("ReplicatedStorage").Package.Events.equipskill
+                    local rebirthRemote = game:GetService("ReplicatedStorage").Package.Events.reb
+                    local npcPosition = CFrame.new(0, 0, 2)
+                    
+                    local Forms = {'SSJBUI','Ultra Ego', 'LBSSJ4', 'SSJR3', 'True God of Creation', 'God of Destruction', 'Super Broly', 'LSSJG', 'LSSJ4',
+                                   'SSJG4', 'LSSJ3', 'SSJ5', 'Mystic Kaioken', 'LSSJ Kaioken', 'SSJ2 Kaioken', 'SSJR3', 'SSJB3',
+                                   'God Of Destruction', 'God Of Creation', 'Jiren Ultra Instinct', 'Mastered Ultra Instinct', 'Godly SSJ2',
+                                   'Ultra Instinct Omen', 'Evil SSJ', 'Blue Evolution', 'Dark Rose', 'Kefla SSJ2', 'SSJ Berserker',
+                                   'True Rose', 'SSJB Kaioken', 'SSJ Rose', 'SSJ Blue', 'Corrupt SSJ', 'SSJ Rage', 'SSJG', 'SSJ4', 'Mystic',
+                                   'LSSJ', 'SSJ3', 'Spirit SSJ', 'SSJ2 Majin', 'SSJ2', 'SSJ Kaioken', 'SSJ', 'FSSJ', 'Kaioken'}
+                    
+                    local function returnQuest(boolean)
+                    
+                        local quest = getrenv()._G.x.GetRecommendedQuest(game.Players.LocalPlayer)
+                        if (game.ReplicatedStorage.Datas[userId]) then
+                            if (quest == "Vis (Vills Planet)") then
+                                if (game.ReplicatedStorage.Datas[userId].Zeni.Value < 15000) then
+                                    print("Che wachin, no te alcanzan los zeni, pa. Farmea mas aca.")
+                                    return ("SSJG Kakata")
+                                else
+                                    print("Vamos pa' Bills papu.")
+                                    game.ReplicatedStorage.Package.Events.TP:InvokeServer("Vills Planet")
+                                    return "SSJG Kakata"
+                                end
+                            end
+                            if (quest == 'Kito') then
+                                print("Vamos pa'casa papu.")
+                                game.ReplicatedStorage.Package.Events.TP:InvokeServer("Earth")
+                                return 'X Fighter Trainer'
+                            end
+                        end
+                        if firstquest == true then
+                            lastquest = SelectedQuests
+                            firstquest = false
+                        end
+                        if game.Players.LocalPlayer.PlayerGui.Main.MainFrame.Frames.Quest.Nop.Visible == true then
+                    
+                            local quest = getrenv()._G.x.GetRecommendedQuest(game.Players.LocalPlayer)
+                            _G.quest = quest
+                            if (boolean) and quest:find('Bills Planet') then
+                                _G.quest = "SSJG Kakata"
+                                return 'SSJG Kakata'
+                            else
+                                _G.quest = quest
+                                return quest
+                    
+                            end
+                        end
+                        local noFilteredTextA = game.Players.LocalPlayer.PlayerGui.Main.MainFrame.Frames.Quest.Yas.Description.text
+                        local tstring1 = string.split(noFilteredTextA, "Defeat")
+                        local length1 = table.getn(tstring1)
+                        local tstring2 = string.split(tstring1[length1], "!")
+                    
+                        local npc = tstring2[1]:sub(2)
+                    
+                        if (npc == "3 Kaio Students") then
+                            npc = "Kaio Student"
+                        elseif (npc == "the Kai-fist Master") then
+                            npc = npc:sub(5, 19)
+                            print(npc)
+                        elseif (npc == "ntertain the greatest fusion") then
+                            npc = "SSJG Kakata"
+                        elseif (npc == "Vegetable in his destroyer form") then
+                            npc = "Vegetable (GoD in-training)"
+                        elseif (npc == "3 X Fighters") then
+                            npc = "X Fighter Trainer"
+                        elseif (npc == "5 Evil Sayas") then
+                            npc = "Citizen"
+                        elseif (npc == "the destroyer: Vills (50%)") then
+                            npc = "Vills (50%)"
+                        elseif (npc == "the Vis at 20%") then
+                            npc = "Vis (20%)"
+                        elseif (npc == "X Fighter Master") then
+                            npc = "Top X Fighter"
+                        elseif (npc == "3 Turtle Students") then
+                            npc = "Turtle Student"
+                    
+                        end
+                    
+                        return npc
+                    end
+                    
+                    local function transform()
+                        pcall(function()
+                            for i, v in pairs(Forms) do
+                                if equipRemote:InvokeServer(v) then
+                                    break
+                                end
+                            end
+                            repeat
+                                wait()
+                                if player.Status.SelectedTransformation.Value ~= player.Status.Transformation.Value then
+                                    game:GetService("ReplicatedStorage").Package.Events.ta:InvokeServer()
+                                end
+                            until game.Players.LocalPlayer.Status.SelectedTransformation.Value ==
+                                game.Players.LocalPlayer.Status.Transformation.Value
+                        end)
+                    end
+                    
+                    local RunService = game:GetService("RunService")
+                    RunService.RenderStepped:Connect(function()
+                        playerHumanoid.Health = math.huge
+                    end)
+                    
+                    while true and wait() do
+                        if (stats.Strength.Value > 0 and stats.Defense.Value > 0 and stats.Energy.Value > 0 and stats.Speed.Value >
+                              0) then
+                            transform()
+                    
+                        end
+                        coroutine.resume(coroutine.create(function()
+                            game:GetService("ReplicatedStorage").Package.Events.reb:InvokeServer()
+                    
+                        end))
+                        if (not player.PlayerGui.Main.MainFrame.Frames.Quest.Nop.Visible) then
+                            transform()
+                            for i, v in next, workspace.Living:GetChildren() do
+                                if (v.Name == returnQuest(true) or v.Name ==
+                                    game:GetService("ReplicatedStorage").Package.Quests[returnQuest(true)].Objective.Value) and
+                                    not player.PlayerGui.Main.MainFrame.Frames.Quest.Nop.Visible and v:FindFirstChild('Humanoid') and
+                                    v:FindFirstChild('HumanoidRootPart') and v.Humanoid.Health > 0 then
+                                    repeat wait()
+                    pcall(function() plr.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame * CFrame.new(0,0,0) end)
+                                                punchRemote:FireServer('Blacknwhite27',1)
+                                        coroutine.resume(coroutine.create(function()
+                                            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame *
+                                                                                                             npcPosition
+                                        end))
+                    
+                                        coroutine.resume(coroutine.create(function()
+                                            local function ataquesmelee()
+                                            if (game.ReplicatedStorage.Datas[userId].Strength.Value > 1500000) then
+                                                game.ReplicatedStorage.Package.Events.mel:InvokeServer("Mach Kick", "Blacknwhite27")
+                                                game.ReplicatedStorage.Package.Events.mel:InvokeServer("God Slicer", "Blacknwhite27")
+                                                game.ReplicatedStorage.Package.Events.mel:InvokeServer("Mach Kick", "Blacknwhite27")
+                                                game.ReplicatedStorage.Package.Events.mel:InvokeServer("Meteor Strike", "Blacknwhite27")
+                                                game.ReplicatedStorage.Package.Events.mel:InvokeServer("Meteor Crash", "Blacknwhite27")
+                                                game.ReplicatedStorage.Package.Events.mel:InvokeServer("Wolf Fang Fist", "Blacknwhite27")
+                                                game.ReplicatedStorage.Package.Events.mel:InvokeServer("Vanish Strike", "Blacknwhite27")
+                                                game.ReplicatedStorage.Package.Events.mel:InvokeServer("Vital Strike", "Blacknwhite27")
+ game.ReplicatedStorage.Package.Events.mel:InvokeServer("Spirit Barrage", "Blacknwhite27")
+                                                wait()
+                                            end
+                                        end
+                                        ataquesmelee()
+                                        end))
+                                        punchRemote:FireServer("Blacknwhite27", 1)
+                                        wait()
+                                    until not v or not v:FindFirstChild('Humanoid') or not v:FindFirstChild('HumanoidRootPart') or
+                                        v.Humanoid.Health <= 0 or player.PlayerGui:WaitForChild('Main').MainFrame.Frames.Quest.Nop.Visible
+                                end
+                            end
+                        else
+                            pcall(function()
+                                questRemote:InvokeServer(workspace.Others.NPCs[returnQuest(true)])
+                            end)
+                        end
+                        break 
+                    end
+                    end
+                end
+                end)
+            end
+        end
+
+        -- The function that takes place when the toggle is pressed
+        -- The variable (Value) is a boolean on whether the toggle is true or false
+        end,
+     })
