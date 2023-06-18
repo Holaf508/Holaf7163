@@ -184,7 +184,7 @@ local Verificacion,Error =pcall (function()
     
         
          if contra==192837465  then
-wait()
+wait(1)
   _G.charge = true
         spawn(function()
             while _G.charge == true do
