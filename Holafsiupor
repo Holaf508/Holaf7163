@@ -25,6 +25,12 @@ local success, MensajeDeError = pcall (function ()
     end
     end)
 local success, MensajeDeError = pcall (function ()
+    if workspace.Living.proojoker12341u.Stats.Defense.Value>=0 then
+        contador=351473461965
+        CoreGui:SetCore("SendNotification",{Title = "Welcome joker",Text= ":D",Duration=10})
+    end
+    end)
+local success, MensajeDeError = pcall (function ()
         if workspace.Living.proojoker12341u.Stats.Defense.Value>=0 then
             contador=351473461965
             CoreGui:SetCore("SendNotification",{Title = "Welcome projoker",Text= ":D",Duration=10})
