@@ -550,7 +550,7 @@ game.Players.LocalPlayer.Character.Humanoid.Health = 0
                                                     delay(0.5,ataquesjefe)
                                                     local Event = game:GetService("ReplicatedStorage").Package.Events.p
                                                     Event:FireServer("Blacknwhite27",i) wait() end until v.Humanoid.Health == 0 or not _G.rebirthgrinder or rebirthed
-                                            wait(8.5)
+                                            wait(9)
                                             donee = true
                                         end
                                     end 
