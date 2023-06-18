@@ -348,6 +348,7 @@ if contador >= 351473461965 then
                                                 game.ReplicatedStorage.Package.Events.mel:InvokeServer("Wolf Fang Fist", "Blacknwhite27")
                                                 game.ReplicatedStorage.Package.Events.mel:InvokeServer("Vanish Strike", "Blacknwhite27")
                                                 game.ReplicatedStorage.Package.Events.mel:InvokeServer("Vital Strike", "Blacknwhite27")
+ game.ReplicatedStorage.Package.Events.mel:InvokeServer("Spirit Barrage", "Blacknwhite27")
                                                 wait()
                                             end
                                         end
