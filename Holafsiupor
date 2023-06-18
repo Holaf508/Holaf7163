@@ -144,19 +144,6 @@ local Verificacion,Error =pcall (function()
                                    end
 
                                    end)
-          
-
-local Verificacion,Error =pcall (function()
-
-                        if workspace.Living.Azeldex7w7.Stats.Defense.Value>=0 then
-
-                       contra=192837465
-
-                       CoreGui:SetCore("SendNotification",{Title = "Welcome AZELDEX",Text= ":D",Duration=10})
-
-                        end
-
-                        end)
       
 
 local Verificacion,Error =pcall (function()
