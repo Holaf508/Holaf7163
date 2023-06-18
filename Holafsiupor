@@ -377,11 +377,11 @@ wait()
         
         if workspace.Others.NPCs:FindFirstChild("Klirin") then
             NPCS = {
-        {"Kid Nohag", minimum = 50000, maximum = 50000, Quest = workspace.Others.NPCs["Kid Nohag"]},
-        {"Radish", minimum = 100000, maximum = 300000, Quest = workspace.Others.NPCs["Radish"]},
-        {"Mapa", minimum = 300000, maximum = 700000, Quest = workspace.Others.NPCs["Mapa"]},
-        {"Super Vegetable", minimum = 700000, maximum = 1500000, Quest = workspace.Others.NPCs["Super Vegetable"]},
-        {"Chilly", minimum = 1500000, maximum = 3000000, Quest = workspace.Others.NPCs["Chilly"]},
+        {"Kid Nohag", minimum = 100000, maximum = 200000, Quest = workspace.Others.NPCs["Kid Nohag"]},
+        {"Radish", minimum = 200000, maximum = 300000, Quest = workspace.Others.NPCs["Radish"]},
+        {"Mapa", minimum = 300000, maximum = 900000, Quest = workspace.Others.NPCs["Mapa"]},
+        {"Super Vegetable", minimum = 900000, maximum = 1800000, Quest = workspace.Others.NPCs["Super Vegetable"]},
+        {"Chilly", minimum = 1800000, maximum = 3000000, Quest = workspace.Others.NPCs["Chilly"]},
         {"Perfect Atom", minimum = 3000000, maximum = 4000000, Quest = workspace.Others.NPCs["Perfect Atom"]},
         {"SSJ2 Wukong", minimum = 4000000, maximum = 5000000, Quest = workspace.Others.NPCs["SSJ2 Wukong"]},
         {"Kai-fist Master", minimum = 5000000, maximum = 7000000, Quest = workspace.Others.NPCs["Kai-fist Master"]},
