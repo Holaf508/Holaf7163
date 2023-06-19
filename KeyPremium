@@ -88,7 +88,7 @@ if contador >= 351473461965 then
                             wait()
                         end
                     end)
-                    wait(1)
+                    wait(3)
                     local player = game.Players.LocalPlayer
                     local statsFolder = game.Workspace.Living[player.Name].Stats
                     local strength = statsFolder.Strength
