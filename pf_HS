@@ -155,7 +155,7 @@ Pronto.TextWrapped = true
 
 -- Scripts:
 
-local function IVSYCYQ_fake_script() -- TextButton.LocalScript 
+local function BSGBLUL_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local boton= script.Parent
@@ -169,8 +169,8 @@ local function IVSYCYQ_fake_script() -- TextButton.LocalScript
 		end
 	end)
 end
-coroutine.wrap(IVSYCYQ_fake_script)()
-local function DDUV_fake_script() -- MenuPrincipal.Verifiacaion 
+coroutine.wrap(BSGBLUL_fake_script)()
+local function YUIYX_fake_script() -- MenuPrincipal.Verifiacaion 
 	local script = Instance.new('LocalScript', MenuPrincipal)
 
 	local texto= script.Parent.TextLabel
@@ -200,8 +200,8 @@ local function DDUV_fake_script() -- MenuPrincipal.Verifiacaion
 		wait(2)
 		until jugador=="Drip_gokuthegoat" or jugador=="Jorge_Yael55"
 end
-coroutine.wrap(DDUV_fake_script)()
-local function LINA_fake_script() -- MenuPrincipal.Farm 
+coroutine.wrap(YUIYX_fake_script)()
+local function TYQQSLY_fake_script() -- MenuPrincipal.Farm 
 	local script = Instance.new('LocalScript', MenuPrincipal)
 
 	local textoverifiacion=script.Parent.TextLabel
@@ -213,18 +213,7 @@ local function LINA_fake_script() -- MenuPrincipal.Farm
 	local velocidadtexto=script.Parent.velocidad
 	
 	repeat
-	if textoverifiacion.Text=="¡Name Correct!" then 
-			wait(3)
-		game.ReplicatedStorage.Package.Events.Start:InvokeServer()
-		game.Players.LocalPlayer.Character.Humanoid.Health = 0
-		wait(5)
-		local A_1 = "Godly SSJ2"
-		local Event = game:GetService("ReplicatedStorage").Package.Events.equipskill
-		Event:InvokeServer(A_1)
-		local Event = game:GetService("ReplicatedStorage").Package.Events.ta
-		Event:InvokeServer()
-		end
-		wait()
+		wait(1)
 	until textoverifiacion=="!Name Correct!"
 	
 	wait(1)
@@ -543,4 +532,4 @@ local function LINA_fake_script() -- MenuPrincipal.Farm
 		break 
 	end
 end
-coroutine.wrap(LINA_fake_script)()
+coroutine.wrap(TYQQSLY_fake_script)()
