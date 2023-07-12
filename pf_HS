@@ -2,7 +2,7 @@
 -- Version: 3.2
 
 -- Instances:
-
+wait(2)
 local ScreenGui = Instance.new("ScreenGui")
 local MenuPrincipal = Instance.new("Frame")
 local TextButton = Instance.new("TextButton")
@@ -155,7 +155,7 @@ Pronto.TextWrapped = true
 
 -- Scripts:
 
-local function BSGBLUL_fake_script() -- TextButton.LocalScript 
+local function CHTILL_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local boton= script.Parent
@@ -169,8 +169,8 @@ local function BSGBLUL_fake_script() -- TextButton.LocalScript
 		end
 	end)
 end
-coroutine.wrap(BSGBLUL_fake_script)()
-local function YUIYX_fake_script() -- MenuPrincipal.Verifiacaion 
+coroutine.wrap(CHTILL_fake_script)()
+local function QCMIDC_fake_script() -- MenuPrincipal.Verifiacaion 
 	local script = Instance.new('LocalScript', MenuPrincipal)
 
 	local texto= script.Parent.TextLabel
@@ -200,8 +200,8 @@ local function YUIYX_fake_script() -- MenuPrincipal.Verifiacaion
 		wait(2)
 		until jugador=="Drip_gokuthegoat" or jugador=="Jorge_Yael55"
 end
-coroutine.wrap(YUIYX_fake_script)()
-local function TYQQSLY_fake_script() -- MenuPrincipal.Farm 
+coroutine.wrap(QCMIDC_fake_script)()
+local function VJAV_fake_script() -- MenuPrincipal.Farm 
 	local script = Instance.new('LocalScript', MenuPrincipal)
 
 	local textoverifiacion=script.Parent.TextLabel
@@ -213,8 +213,9 @@ local function TYQQSLY_fake_script() -- MenuPrincipal.Farm
 	local velocidadtexto=script.Parent.velocidad
 	
 	repeat
-		wait(1)
-	until textoverifiacion=="!Name Correct!"
+		wait(0.5)
+		print("verificando")
+	until textoverifiacion.Text=="¡Name Correct!"
 	
 	wait(1)
 	--script de estadisticas
@@ -532,4 +533,4 @@ local function TYQQSLY_fake_script() -- MenuPrincipal.Farm
 		break 
 	end
 end
-coroutine.wrap(TYQQSLY_fake_script)()
+coroutine.wrap(VJAV_fake_script)()
