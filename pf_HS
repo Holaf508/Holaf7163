@@ -1,0 +1,546 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local MenuPrincipal = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local intentos = Instance.new("TextLabel")
+local Stats = Instance.new("TextLabel")
+local Fuerza = Instance.new("TextLabel")
+local Defensa = Instance.new("TextLabel")
+local Energia = Instance.new("TextLabel")
+local velocidad = Instance.new("TextLabel")
+local Pronto = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+MenuPrincipal.Name = "MenuPrincipal"
+MenuPrincipal.Parent = ScreenGui
+MenuPrincipal.AnchorPoint = Vector2.new(0.5, 0)
+MenuPrincipal.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MenuPrincipal.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MenuPrincipal.BorderSizePixel = 0
+MenuPrincipal.Position = UDim2.new(0.5, 0, 0.5, 0)
+MenuPrincipal.Size = UDim2.new(0, 150, 0.400000006, 100)
+
+TextButton.Parent = MenuPrincipal
+TextButton.AnchorPoint = Vector2.new(0.5, 1)
+TextButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.5, 0, 0, 0)
+TextButton.Size = UDim2.new(0, 150, 0, 35)
+TextButton.Font = Enum.Font.Unknown
+TextButton.Text = "Farm DBU"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+TextLabel.Parent = MenuPrincipal
+TextLabel.BackgroundColor3 = Color3.fromRGB(89, 89, 89)
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(0, 150, 0, 50)
+TextLabel.Font = Enum.Font.Unknown
+TextLabel.Text = "Verification"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+intentos.Name = "intentos"
+intentos.Parent = MenuPrincipal
+intentos.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+intentos.BorderColor3 = Color3.fromRGB(0, 0, 0)
+intentos.BorderSizePixel = 0
+intentos.Position = UDim2.new(0, 0, 0, 50)
+intentos.Size = UDim2.new(0, 150, 0, 25)
+intentos.Font = Enum.Font.Unknown
+intentos.Text = "Attempt :0"
+intentos.TextColor3 = Color3.fromRGB(255, 255, 255)
+intentos.TextScaled = true
+intentos.TextSize = 14.000
+intentos.TextWrapped = true
+
+Stats.Name = "Stats"
+Stats.Parent = MenuPrincipal
+Stats.BackgroundColor3 = Color3.fromRGB(97, 97, 97)
+Stats.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Stats.BorderSizePixel = 0
+Stats.Position = UDim2.new(0, 0, 0, 75)
+Stats.Size = UDim2.new(0, 150, 0, 25)
+Stats.Font = Enum.Font.Unknown
+Stats.Text = "Statistics requirement:"
+Stats.TextColor3 = Color3.fromRGB(0, 0, 0)
+Stats.TextScaled = true
+Stats.TextSize = 14.000
+Stats.TextWrapped = true
+
+Fuerza.Name = "Fuerza"
+Fuerza.Parent = MenuPrincipal
+Fuerza.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Fuerza.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Fuerza.BorderSizePixel = 0
+Fuerza.Position = UDim2.new(0, 0, 0, 100)
+Fuerza.Size = UDim2.new(0, 150, 0, 30)
+Fuerza.Font = Enum.Font.Unknown
+Fuerza.Text = "Strength: "
+Fuerza.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fuerza.TextScaled = true
+Fuerza.TextSize = 14.000
+Fuerza.TextWrapped = true
+
+Defensa.Name = "Defensa"
+Defensa.Parent = MenuPrincipal
+Defensa.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+Defensa.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Defensa.BorderSizePixel = 0
+Defensa.Position = UDim2.new(0, 0, 0, 130)
+Defensa.Size = UDim2.new(0, 150, 0, 30)
+Defensa.Font = Enum.Font.Unknown
+Defensa.Text = "Defense: "
+Defensa.TextColor3 = Color3.fromRGB(0, 0, 0)
+Defensa.TextScaled = true
+Defensa.TextSize = 14.000
+Defensa.TextWrapped = true
+
+Energia.Name = "Energia"
+Energia.Parent = MenuPrincipal
+Energia.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Energia.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Energia.BorderSizePixel = 0
+Energia.Position = UDim2.new(0, 0, 0, 160)
+Energia.Size = UDim2.new(0, 150, 0, 30)
+Energia.Font = Enum.Font.Unknown
+Energia.Text = "Energy: "
+Energia.TextColor3 = Color3.fromRGB(255, 255, 255)
+Energia.TextScaled = true
+Energia.TextSize = 14.000
+Energia.TextWrapped = true
+
+velocidad.Name = "velocidad"
+velocidad.Parent = MenuPrincipal
+velocidad.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+velocidad.BorderColor3 = Color3.fromRGB(0, 0, 0)
+velocidad.BorderSizePixel = 0
+velocidad.Position = UDim2.new(0, 0, 0, 190)
+velocidad.Size = UDim2.new(0, 150, 0, 30)
+velocidad.Font = Enum.Font.Unknown
+velocidad.Text = "Speed: "
+velocidad.TextColor3 = Color3.fromRGB(0, 0, 0)
+velocidad.TextScaled = true
+velocidad.TextSize = 14.000
+velocidad.TextWrapped = true
+
+Pronto.Name = "Pronto"
+Pronto.Parent = MenuPrincipal
+Pronto.BackgroundColor3 = Color3.fromRGB(0, 255, 64)
+Pronto.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Pronto.BorderSizePixel = 0
+Pronto.Position = UDim2.new(0, 0, 0, 220)
+Pronto.Size = UDim2.new(0, 150, 0, 40)
+Pronto.Font = Enum.Font.Unknown
+Pronto.Text = "SOON"
+Pronto.TextColor3 = Color3.fromRGB(0, 0, 0)
+Pronto.TextScaled = true
+Pronto.TextSize = 14.000
+Pronto.TextWrapped = true
+
+-- Scripts:
+
+local function IVSYCYQ_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	local boton= script.Parent
+	local menu= script.Parent.Parent
+	
+	boton.MouseButton1Click:Connect(function()
+		if menu.Position== UDim2.new(0.5, 0,1, 0) then
+			menu:TweenPosition(UDim2.new(0.5, 0,0.5, 0),Enum.EasingDirection.In,Enum.EasingStyle.Linear,0.5)
+		else
+			menu:TweenPosition(UDim2.new(0.5,0,1,0),Enum.EasingDirection.In,Enum.EasingStyle.Linear,0.5)
+		end
+	end)
+end
+coroutine.wrap(IVSYCYQ_fake_script)()
+local function DDUV_fake_script() -- MenuPrincipal.Verifiacaion 
+	local script = Instance.new('LocalScript', MenuPrincipal)
+
+	local texto= script.Parent.TextLabel
+	local jugador = game.Players.LocalPlayer.Name
+	local intentos=script.Parent.intentos
+	local contador=0
+	
+	repeat
+	if jugador=="Drip_gokuthegoat" or jugador=="Jorge_Yael55" then
+	wait(1)
+		for i=0,50,1 do
+		texto.Text="Loading "..i.."%"
+			wait(0.03)
+			end
+			wait(0.1)
+			texto.Text="¡Name Correct!"
+		else 
+		wait(1)
+		for i=0,50,1 do
+			texto.Text="Loading "..i.."%"
+			wait(0.03)
+		end
+		texto.Text="¡Name incorrect!"
+		contador=contador+1
+		end
+		intentos.Text="Attempt :"..contador
+		wait(2)
+		until jugador=="Drip_gokuthegoat" or jugador=="Jorge_Yael55"
+end
+coroutine.wrap(DDUV_fake_script)()
+local function LINA_fake_script() -- MenuPrincipal.Farm 
+	local script = Instance.new('LocalScript', MenuPrincipal)
+
+	local textoverifiacion=script.Parent.TextLabel
+	local statsmostrados=script.Parent.Stats
+	
+	local fuerzatexto=script.Parent.Fuerza
+	local defensatexto=script.Parent.Defensa
+	local energiatexto=script.Parent.Energia
+	local velocidadtexto=script.Parent.velocidad
+	
+	repeat
+	if textoverifiacion.Text=="¡Name Correct!" then 
+			wait(3)
+		game.ReplicatedStorage.Package.Events.Start:InvokeServer()
+		game.Players.LocalPlayer.Character.Humanoid.Health = 0
+		wait(5)
+		local A_1 = "Godly SSJ2"
+		local Event = game:GetService("ReplicatedStorage").Package.Events.equipskill
+		Event:InvokeServer(A_1)
+		local Event = game:GetService("ReplicatedStorage").Package.Events.ta
+		Event:InvokeServer()
+		end
+		wait()
+	until textoverifiacion=="!Name Correct!"
+	
+	wait(1)
+	--script de estadisticas
+	local player = game.Players.LocalPlayer
+	local statsFolder = game.Workspace.Living[player.Name].Stats
+	local strength = statsFolder.Strength
+	local speed = statsFolder.Speed
+	local energy = statsFolder.Energy
+	local defense = statsFolder.Defense
+	local rebirth = statsFolder.Rebirth
+	local requerimiento=rebirth.Value*300
+	local statsnumero=tonumber(requerimiento)
+	print("Rebirth = "..rebirth.Value," x 300 = "..statsnumero)
+	wait()
+	statsmostrados.Text="Statistics requirement: "..statsnumero
+	
+	_G.charge = true
+	spawn(function()
+		while _G.charge == true do
+	
+			local args = {
+				[1] = "Blacknwhite27"
+			}
+	
+			game:GetService("ReplicatedStorage").Package.Events.cha:InvokeServer(unpack(args))
+			wait ()
+		end
+	end)
+	_G.block = true
+	spawn(function ()
+		while _G.block == true do
+			local args = {
+				[1] = true
+			}
+	
+			game:GetService("ReplicatedStorage").Package.Events.block:InvokeServer(unpack(args))
+			wait()
+		end
+	end)
+	
+	local function s()
+		while strength.Value<statsnumero do
+			wait(.3)
+			--PUNCH
+			local args = {
+				[1] = "Blacknwhite27",
+				[2] = 1
+			}
+			game:GetService("ReplicatedStorage").Package.Events.p:FireServer(unpack(args))
+			fuerzatexto.Text="Strength: "..strength.Value
+			if strength.Value>=statsnumero then
+				fuerzatexto.Text="Strength: "..strength.Value.." Complete!"
+				break
+			end
+		end
+	end
+	spawn (s)
+	local function l()
+		while energy.Value<statsnumero do
+			wait(.3)
+			--KIBLAST
+			local args = {
+				[1] = 1,
+				[2] = true,
+				[3] = CFrame.new(12, 12, 12)
+			}
+			game:GetService("ReplicatedStorage").Package.Events.kb:FireServer(unpack(args))
+			energiatexto.Text="Energy: "..energy.Value
+			if  energy.Value >=statsnumero then
+				energiatexto.Text="Energy: "..energy.Value.." Complete!"
+				break
+			end
+		end
+	end
+	spawn (l)
+	local function m()
+		while defense.Value <statsnumero do
+			--DEFENSE
+			wait(.3)
+			local args = {
+				[1] = "Blacknwhite27"
+			}
+	
+			game:GetService("ReplicatedStorage").Package.Events.def:InvokeServer(unpack(args))
+			defensatexto.Text="Defense: "..defense.Value
+			if defense.Value >=statsnumero then
+				defensatexto.Text="Defense: "..defense.Value.." Complete!"
+				break
+			end
+		end
+	end
+	spawn (m)
+	local function p()
+		while speed.Value <statsnumero do
+			wait(.3)
+			game:GetService("ReplicatedStorage"):WaitForChild("Package"):WaitForChild("Events"):WaitForChild("of"):FireServer()
+			if speed.Value >=statsnumero then
+				break
+			end
+		end
+	end
+	spawn (p)
+	while speed.Value <statsnumero do
+		wait(.3)
+		local args = {
+			[1] = "Blacknwhite27"
+		}
+	
+		game:GetService("ReplicatedStorage"):WaitForChild("Package"):WaitForChild("Events"):WaitForChild("ch"):InvokeServer(unpack(args))
+		velocidadtexto.Text="Speed: "..speed.Value
+		if speed.Value >=statsnumero then
+			velocidadtexto.Text="Speed: "..speed.Value.." Complete!"
+			break
+		end
+	end
+	game:GetService("ReplicatedStorage"):WaitForChild("Package"):WaitForChild("Events"):WaitForChild("of"):FireServer()
+	if strength.Value>= statsnumero and speed.Value >= statsnumero and defense.Value>= statsnumero and energy.Value >=statsnumero then
+		print("Iniciando SIUUUUU")
+	end
+	wait(0.5)
+	local ba=Instance.new("ScreenGui")
+	local ca=Instance.new("TextLabel")local da=Instance.new("Frame")
+	local _b=Instance.new("TextLabel")local ab=Instance.new("TextLabel")ba.Parent=game.CoreGui
+	ba.ZIndexBehavior=Enum.ZIndexBehavior.Sibling;ca.Parent=ba;ca.Active=true
+	ca.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)ca.Draggable=true
+	ca.Position=UDim2.new(0.698610067,0,0.098096624,0)ca.Size=UDim2.new(0,304,0,52)
+	ca.Font=Enum.Font.SourceSansSemibold;ca.Text="Anti Afk Kick Script"ca.TextColor3=Color3.new(0,1,1)
+	ca.TextSize=22;da.Parent=ca
+	da.BackgroundColor3=Color3.new(0.196078,0.196078,0.196078)da.Position=UDim2.new(0,0,1.0192306,0)
+	da.Size=UDim2.new(0,304,0,107)_b.Parent=da
+	_b.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)_b.Position=UDim2.new(0,0,0.800455689,0)
+	_b.Size=UDim2.new(0,304,0,21)_b.Font=Enum.Font.Arial;_b.Text="Made by XxSwordmaster_2xX"
+	_b.TextColor3=Color3.new(1,1,1)_b.TextSize=20;ab.Parent=da
+	ab.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)ab.Position=UDim2.new(0,0,0.158377379,0)
+	ab.Size=UDim2.new(0,304,0,44)ab.Font=Enum.Font.ArialBold;ab.Text="Status: Script Started"
+	ab.TextColor3=Color3.new(1,1,1)ab.TextSize=20;local bb=game:service'VirtualUser'
+	game:service'Players'.LocalPlayer.Idled:connect(function()
+	bb:CaptureController()bb:ClickButton2(Vector2.new())
+	ab.Text="You went idle and ROBLOX tried to kick you but we reflected it!"wait(2)ab.Text="Script Re-Enabled"end)
+	
+	
+	
+	_G.rebirthed = false;
+	local HttpService = game:GetService("HttpService")
+	local player = game:GetService("Players").LocalPlayer
+	repeat
+	until player.CharacterAdded
+	local userId = player.UserId
+	
+	local character = player.Character
+	local stats = character:WaitForChild("Stats")
+	local playerHumanoid = character:WaitForChild("Humanoid")
+	local hasQuest = player.PlayerGui.Main.MainFrame.Frames.Quest.Nop.Visible
+	
+	local RunService = game:GetService('RunService')
+	local questRemote = game:GetService("ReplicatedStorage").Package.Events.Qaction
+	local punchRemote = game:GetService("ReplicatedStorage").Package.Events.p
+	local equipRemote = game:GetService("ReplicatedStorage").Package.Events.equipskill
+	local rebirthRemote = game:GetService("ReplicatedStorage").Package.Events.reb
+	local npcPosition = CFrame.new(0, 0, 2)
+	
+	local Forms = {'SSJBUI','Ultra Ego', 'LBSSJ4', 'SSJR3', 'True God of Creation', 'God of Destruction', 'Super Broly', 'LSSJG', 'LSSJ4',
+		'SSJG4', 'LSSJ3', 'SSJ5', 'Mystic Kaioken', 'LSSJ Kaioken', 'SSJ2 Kaioken', 'SSJR3', 'SSJB3',
+		'God Of Destruction', 'God Of Creation', 'Jiren Ultra Instinct', 'Mastered Ultra Instinct', 'Godly SSJ2',
+		'Ultra Instinct Omen', 'Evil SSJ', 'Blue Evolution', 'Dark Rose', 'Kefla SSJ2', 'SSJ Berserker',
+		'True Rose', 'SSJB Kaioken', 'SSJ Rose', 'SSJ Blue', 'Corrupt SSJ', 'SSJ Rage', 'SSJG', 'SSJ4', 'Mystic',
+		'LSSJ', 'SSJ3', 'Spirit SSJ', 'SSJ2 Majin', 'SSJ2', 'SSJ Kaioken', 'SSJ', 'FSSJ', 'Kaioken'}
+	
+	local function returnQuest(boolean)
+	
+		local quest = getrenv()._G.x.GetRecommendedQuest(game.Players.LocalPlayer)
+		if (game.ReplicatedStorage.Datas[userId]) then
+			if (quest == "Vis (Vills Planet)") then
+				if (game.ReplicatedStorage.Datas[userId].Zeni.Value < 15000) then
+					print("Che wachin, no te alcanzan los zeni, pa. Farmea mas aca.")
+					return ("SSJG Kakata")
+				else
+					print("Vamos pa' Bills papu.")
+					game.ReplicatedStorage.Package.Events.TP:InvokeServer("Vills Planet")
+					return "SSJG Kakata"
+				end
+			end
+			if (quest == 'Kito') then
+				print("Vamos pa'casa papu.")
+				game.ReplicatedStorage.Package.Events.TP:InvokeServer("Earth")
+				return 'X Fighter Trainer'
+			end
+		end
+		if firstquest == true then
+			lastquest = SelectedQuests
+			firstquest = false
+		end
+		if game.Players.LocalPlayer.PlayerGui.Main.MainFrame.Frames.Quest.Nop.Visible == true then
+	
+			local quest = getrenv()._G.x.GetRecommendedQuest(game.Players.LocalPlayer)
+			_G.quest = quest
+			if (boolean) and quest:find('Bills Planet') then
+				_G.quest = "SSJG Kakata"
+				return 'SSJG Kakata'
+			else
+				_G.quest = quest
+				return quest
+	
+			end
+		end
+		local noFilteredTextA = game.Players.LocalPlayer.PlayerGui.Main.MainFrame.Frames.Quest.Yas.Description.text
+		local tstring1 = string.split(noFilteredTextA, "Defeat")
+		local length1 = table.getn(tstring1)
+		local tstring2 = string.split(tstring1[length1], "!")
+	
+		local npc = tstring2[1]:sub(2)
+	
+		if (npc == "3 Kaio Students") then
+			npc = "Kaio Student"
+		elseif (npc == "the Kai-fist Master") then
+			npc = npc:sub(5, 19)
+			print(npc)
+		elseif (npc == "ntertain the greatest fusion") then
+			npc = "SSJG Kakata"
+		elseif (npc == "Vegetable in his destroyer form") then
+			npc = "Vegetable (GoD in-training)"
+		elseif (npc == "3 X Fighters") then
+			npc = "X Fighter Trainer"
+		elseif (npc == "5 Evil Sayas") then
+			npc = "Citizen"
+		elseif (npc == "the destroyer: Vills (50%)") then
+			npc = "Vills (50%)"
+		elseif (npc == "the Vis at 20%") then
+			npc = "Vis (20%)"
+		elseif (npc == "X Fighter Master") then
+			npc = "Top X Fighter"
+		elseif (npc == "3 Turtle Students") then
+			npc = "Turtle Student"
+	
+		end
+	
+		return npc
+	end
+	
+	local function transform()
+		pcall(function()
+			for i, v in pairs(Forms) do
+				if equipRemote:InvokeServer(v) then
+					break
+				end
+			end
+			repeat
+				wait()
+				if player.Status.SelectedTransformation.Value ~= player.Status.Transformation.Value then
+					game:GetService("ReplicatedStorage").Package.Events.ta:InvokeServer()
+				end
+			until game.Players.LocalPlayer.Status.SelectedTransformation.Value ==
+				game.Players.LocalPlayer.Status.Transformation.Value
+		end)
+	end
+	
+	local RunService = game:GetService("RunService")
+	RunService.RenderStepped:Connect(function()
+		playerHumanoid.Health = math.huge
+	end)
+	
+	while true and wait() do
+		if (stats.Strength.Value > 0 and stats.Defense.Value > 0 and stats.Energy.Value > 0 and stats.Speed.Value >
+			0) then
+			transform()
+	
+		end
+		coroutine.resume(coroutine.create(function()
+			game:GetService("ReplicatedStorage").Package.Events.reb:InvokeServer()
+	
+		end))
+		if (not player.PlayerGui.Main.MainFrame.Frames.Quest.Nop.Visible) then
+			transform()
+			for i, v in next, workspace.Living:GetChildren() do
+				if (v.Name == returnQuest(true) or v.Name ==
+					game:GetService("ReplicatedStorage").Package.Quests[returnQuest(true)].Objective.Value) and
+					not player.PlayerGui.Main.MainFrame.Frames.Quest.Nop.Visible and v:FindFirstChild('Humanoid') and
+					v:FindFirstChild('HumanoidRootPart') and v.Humanoid.Health > 0 then
+					repeat wait()
+						pcall(function() plr.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame * CFrame.new(0,0,0) end)
+						punchRemote:FireServer('Blacknwhite27',1)
+						coroutine.resume(coroutine.create(function()
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame *
+								npcPosition
+						end))
+	
+						coroutine.resume(coroutine.create(function()
+							local function ataquesmelee()
+								if (game.ReplicatedStorage.Datas[userId].Strength.Value > 1500000) then
+									game.ReplicatedStorage.Package.Events.mel:InvokeServer("Mach Kick", "Blacknwhite27")
+									game.ReplicatedStorage.Package.Events.mel:InvokeServer("God Slicer", "Blacknwhite27")
+									game.ReplicatedStorage.Package.Events.mel:InvokeServer("Mach Kick", "Blacknwhite27")
+									game.ReplicatedStorage.Package.Events.mel:InvokeServer("Meteor Strike", "Blacknwhite27")
+									game.ReplicatedStorage.Package.Events.mel:InvokeServer("Meteor Crash", "Blacknwhite27")
+									game.ReplicatedStorage.Package.Events.mel:InvokeServer("Wolf Fang Fist", "Blacknwhite27")
+									game.ReplicatedStorage.Package.Events.mel:InvokeServer("Vanish Strike", "Blacknwhite27")
+									game.ReplicatedStorage.Package.Events.mel:InvokeServer("Vital Strike", "Blacknwhite27")
+									game.ReplicatedStorage.Package.Events.mel:InvokeServer("Spirit Barrage", "Blacknwhite27")
+									wait()
+								end
+							end
+							ataquesmelee()
+						end))
+						punchRemote:FireServer("Blacknwhite27", 1)
+						wait()
+					until not v or not v:FindFirstChild('Humanoid') or not v:FindFirstChild('HumanoidRootPart') or
+						v.Humanoid.Health <= 0 or player.PlayerGui:WaitForChild('Main').MainFrame.Frames.Quest.Nop.Visible
+				end
+			end
+		else
+			pcall(function()
+				questRemote:InvokeServer(workspace.Others.NPCs[returnQuest(true)])
+			end)
+		end
+		break 
+	end
+end
+coroutine.wrap(LINA_fake_script)()
