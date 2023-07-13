@@ -10,7 +10,7 @@ Event:InvokeServer(A_1)
 local Event = game:GetService("ReplicatedStorage").Package.Events.ta
 Event:InvokeServer()
 local CoreGui = game:GetService("StarterGui")
-wait(1)
+wait(2)
 local contador =0
 local success, MensajeDeError = pcall (function ()
 if workspace.Living.Zerincee.Stats.Defense.Value>=0 then
